@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar() {
 	return (
-		<nav className="py-12 flex justify-between">
+		<nav className="py-12 mb-12 flex justify-between">
 			<div className="hover:underline decoration-secondary">
 				<Link href="/">{`<Christopher Lynde />`}</Link>
 			</div>
