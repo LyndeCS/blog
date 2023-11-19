@@ -1,26 +1,40 @@
+const categories = [
+	"Front-end",
+	"Back-end",
+	"Full-stack",
+	"DevOps",
+	"Design",
+	"Other",
+];
+const tags = [
+	"React",
+	"Tailwind",
+	"MySQL",
+	"Personal Development",
+	"HTML",
+	"CSS",
+	"Typescript",
+	"Interview",
+];
+
+const tags2 = [
+	{ name: "React", active: true },
+	{ name: "Tailwind", active: false },
+	{ name: "MySQL", active: false },
+	{ name: "Personal Development", active: false },
+	{ name: "HTML", active: false },
+	{ name: "CSS", active: false },
+	{ name: "Typescript", active: false },
+	{ name: "Interview", active: false },
+];
 export function CategoryDropDown() {
-	const categories = [
-		"Front-end",
-		"Back-end",
-		"Full-stack",
-		"DevOps",
-		"Design",
-		"Other",
-	];
 	return (
-		<select
-			name="categories"
-			className="bg-[#1C1C23] px-4 py-2 text-sm w-1/3"
-			defaultValue=""
-		>
-			<option key={0} value="" disabled hidden>
-				Categories
-			</option>
-			{categories.map((category, index) => (
-				<option key={index + 1} value={category}>
-					{category}
-				</option>
+		<div className="flex flex-wrap gap-2 items-center">
+			{tags2.map((tag) => (
+				<button className="font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763]">
+					{tag.name}
+				</button>
 			))}
-		</select>
+		</div>
 	);
 }

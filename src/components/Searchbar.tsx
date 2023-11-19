@@ -3,7 +3,7 @@ export function Searchbar() {
 		<form className="flex gap-4">
 			<input
 				type="text"
-				className="bg-[#1C1C23] px-4 py-2 w-full text-sm placeholder:text-[#838383]"
+				className="bg-[#1C1C23] p-2 w-full text-sm placeholder:text-[#838383]"
 				placeholder="Type to filter posts..."
 			/>
 		</form>
