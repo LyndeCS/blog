@@ -16,14 +16,12 @@ export function FeaturedPost() {
 			onMouseLeave={() => setIsHovered(false)}
 		>
 			<article className="flex my-12 gap-4">
-				<div className="w-1/2 h-full rounded-md overflow-hidden">
+				<div className="w-1/2 rounded-md overflow-hidden">
 					<img
 						src="/images/thumbnail1.png"
 						alt="Laptop with rising graph on screen"
-						className={`h-full object-cover ${
-							isHovered
-								? "scale-[1.02] ease-in-out transition duration-500"
-								: ""
+						className={`scale-110 ease-in-out transition duration-[1s] ${
+							isHovered ? "scale-[1.15]" : ""
 						}`}
 					/>
 				</div>
