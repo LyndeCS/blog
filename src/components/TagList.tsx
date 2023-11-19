@@ -8,13 +8,15 @@ const tags = [
 	{ name: "Typescript", active: false },
 	{ name: "Interview", active: false },
 ];
-export function CategoryDropDown() {
+export function TagList() {
 	return (
 		<div className="flex flex-wrap gap-2 items-center">
 			{tags.map((tag) => (
 				<button
 					key={tag.name}
-					className="font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763]"
+					className={`font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763] ${
+						tag.active ? "bg-primary" : ""
+					}`}
 				>
 					{tag.name}
 				</button>

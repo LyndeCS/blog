@@ -4,8 +4,11 @@ export function Navbar() {
 	return (
 		<nav className="py-12 mb-12 flex justify-between font-semibold">
 			<Link href="/">
-				<div className="hover:underline decoration-secondary">
-					<span className="text-secondary">{"<"}</span>Christopher Lynde
+				<div>
+					<span className="text-secondary">{"<"}</span>
+					<span className="hover:underline decoration-secondary underline-offset-2 decoration-2">
+						Christopher Lynde
+					</span>
 					<span className="text-secondary">{" />"}</span>
 				</div>
 			</Link>

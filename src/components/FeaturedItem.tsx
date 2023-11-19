@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export function FeaturedPost() {
+export function FeaturedItem() {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -27,10 +27,11 @@ export function FeaturedPost() {
 				</div>
 
 				<div className="flex flex-col gap-4 w-1/2">
+					{/* <p className="font-mono text-sm text-[#75757D] mb-[-12px]">NEW</p> */}
 					<p className="font-mono font-light text-[#75757D] text-xs">
 						November 15, 2021
 					</p>
-					{/* <p className="font-mono text-sm text-[#75757D] mb-[-12px]">NEW</p> */}
+
 					<h2
 						className={`text-2xl font-bold decoration-secondary decoration-2 underline-offset-[3px] mt-[-10px] ${
 							isHovered ? "underline" : ""
@@ -38,7 +39,7 @@ export function FeaturedPost() {
 					>
 						Two-Week Tune-Up: Maximizing my Employability - Day 0
 					</h2>
-					<p className={`${inter.className} font-light text-[16px]`}>
+					<p className={`${inter.className} font-light`}>
 						Follow me on my journey as I supercharge my portfolio, tech
 						knowledge, and interview skills{<br />} in an effort to optimize my
 						appeal as
