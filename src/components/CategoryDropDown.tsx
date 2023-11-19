@@ -1,23 +1,4 @@
-const categories = [
-	"Front-end",
-	"Back-end",
-	"Full-stack",
-	"DevOps",
-	"Design",
-	"Other",
-];
 const tags = [
-	"React",
-	"Tailwind",
-	"MySQL",
-	"Personal Development",
-	"HTML",
-	"CSS",
-	"Typescript",
-	"Interview",
-];
-
-const tags2 = [
 	{ name: "React", active: true },
 	{ name: "Tailwind", active: false },
 	{ name: "MySQL", active: false },
@@ -30,9 +11,9 @@ const tags2 = [
 export function CategoryDropDown() {
 	return (
 		<div className="flex flex-wrap gap-2 items-center">
-			{tags2.map((tag, index) => (
+			{tags.map((tag) => (
 				<button
-					key={index}
+					key={tag.name}
 					className="font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763]"
 				>
 					{tag.name}

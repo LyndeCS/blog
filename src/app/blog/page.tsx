@@ -1,7 +1,6 @@
 import { CategoryDropDown } from "@/components/CategoryDropDown";
 import { FeaturedPost } from "@/components/FeaturedPost";
 import { Searchbar } from "@/components/Searchbar";
-import { TagList } from "@/components/TagList";
 
 export default function blog() {
 	return (
