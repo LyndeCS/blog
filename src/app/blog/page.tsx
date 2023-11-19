@@ -2,6 +2,7 @@ import { BlogItem } from "@/components/BlogItem";
 import { FeaturedItem } from "@/components/FeaturedItem";
 import { Searchbar } from "@/components/Searchbar";
 import { TagList } from "@/components/TagList";
+import { v4 as uuidv4 } from "uuid";
 
 const blogs = [
 	{
@@ -48,10 +49,10 @@ export default function blog() {
 				<FeaturedItem />
 				<div className="grid grid-cols-3 gap-x-8 gap-y-10">
 					{blogs.map((blog) => {
-						return <BlogItem blog={blog} />;
+						return <BlogItem key={uuidv4()} blog={blog} />;
 					})}
 					{blogs.map((blog) => {
-						return <BlogItem blog={blog} />;
+						return <BlogItem key={uuidv4()} blog={blog} />;
 					})}
 				</div>
 			</div>
