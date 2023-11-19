@@ -30,8 +30,11 @@ const tags2 = [
 export function CategoryDropDown() {
 	return (
 		<div className="flex flex-wrap gap-2 items-center">
-			{tags2.map((tag) => (
-				<button className="font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763]">
+			{tags2.map((tag, index) => (
+				<button
+					key={index}
+					className="font-mono text-sm py-[2px] px-[16px] h-fit rounded-[4px] border border-[#575763]"
+				>
 					{tag.name}
 				</button>
 			))}
