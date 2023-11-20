@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Inter } from "next/font/google";
+import { v4 as uuidv4 } from "uuid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +55,10 @@ export function BlogItem({ blog }: BlogProps) {
 			<p className={`${inter.className} text-sm font-light`}>{blog.subtitle}</p>
 			<ul className="flex gap-2 my-2">
 				{blog.tags.map((tag) => (
-					<li className="font-mono text-sm py-[1px] px-[8px] h-fit rounded-[4px] border border-[#575763]">
+					<li
+						key={uuidv4()}
+						className="font-mono text-sm py-[1px] px-[8px] h-fit rounded-[4px] border border-[#575763]"
+					>
 						{tag}
 					</li>
 				))}
