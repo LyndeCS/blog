@@ -29,12 +29,12 @@ export function BlogItem({ blog }: BlogProps) {
 			onMouseLeave={() => setIsHovered(false)}
 			className="flex flex-col gap-2"
 		>
-			<div className="relative w-[312px] h-[168px] rounded-md overflow-hidden">
+			<div className="relative w-[312px] h-[174px] rounded-md overflow-hidden">
 				<Image
 					src={blog.image}
 					alt="Article Thumbnail"
 					fill
-					sizes="(min-width: 808px) 50vw, 100vw"
+					sizes="100%"
 					style={{
 						objectFit: "cover", // cover, contain, none
 					}}

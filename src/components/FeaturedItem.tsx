@@ -14,8 +14,9 @@ export function FeaturedItem() {
 			href="#"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
+			className="my-16"
 		>
-			<article className="flex my-16 gap-4">
+			<article className="flex gap-4">
 				<div className="w-1/2 rounded-md overflow-hidden">
 					<img
 						src="/images/thumbnail1.png"
