@@ -15,13 +15,13 @@ export function FeaturedItem() {
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			<article className="flex my-12 gap-4">
+			<article className="flex my-16 gap-4">
 				<div className="w-1/2 rounded-md overflow-hidden">
 					<img
 						src="/images/thumbnail1.png"
 						alt="Laptop with rising graph on screen"
-						className={`scale-110 ease-in-out transition duration-[1s] ${
-							isHovered ? "scale-[1.15]" : ""
+						className={`ease-in-out transition duration-[1s] ${
+							isHovered ? "scale-[1.02]" : ""
 						}`}
 					/>
 				</div>
@@ -41,9 +41,8 @@ export function FeaturedItem() {
 					</h2>
 					<p className={`${inter.className} font-light`}>
 						Follow me on my journey as I supercharge my portfolio, tech
-						knowledge, and interview skills{<br />} in an effort to optimize my
-						appeal as
-						{<br />} a potential employee.
+						knowledge, and interview skills in an effort to optimize my appeal
+						as a potential employee.
 					</p>
 					<p
 						className={`font-mono text-secondary font-light underline-offset-2 ${

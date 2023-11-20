@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 type BlogProps = {
 	blog: {
+		id: number;
 		date: string;
 		title: string;
 		subtitle: string;
@@ -25,17 +26,25 @@ export function BlogItem({ blog }: BlogProps) {
 			href="#"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="flex flex-col basis-[30%] gap-2"
+			className="flex flex-col gap-2"
 		>
-			<Image
-				src={blog.image}
-				alt="Article Thumbnail"
-				width={260}
-				height={162}
-				className="rounded-md"
-			/>
+			<div className="relative w-[312px] h-[168px] rounded-md overflow-hidden">
+				<Image
+					src={blog.image}
+					alt="Article Thumbnail"
+					fill
+					sizes="(min-width: 808px) 50vw, 100vw"
+					style={{
+						objectFit: "cover", // cover, contain, none
+					}}
+					className={`rounded-md ease-in-out transition duration-[1s] ${
+						isHovered ? "scale-[1.02]" : ""
+					}`}
+				/>
+			</div>
+
 			<h3
-				className={`font-bold decoration-secondary decoration-2 underline-offset-[3px] ${
+				className={`text-lg font-bold decoration-secondary decoration-2 underline-offset-[2px] ${
 					isHovered ? "underline" : ""
 				}`}
 			>
@@ -43,6 +52,13 @@ export function BlogItem({ blog }: BlogProps) {
 			</h3>
 			<p className="font-mono font-light text-[#75757D] text-xs">{blog.date}</p>
 			<p className={`${inter.className} text-sm font-light`}>{blog.subtitle}</p>
+			<ul className="flex gap-2 my-2">
+				{blog.tags.map((tag) => (
+					<li className="font-mono text-sm py-[1px] px-[8px] h-fit rounded-[4px] border border-[#575763]">
+						{tag}
+					</li>
+				))}
+			</ul>
 		</Link>
 	);
 }
