@@ -1,30 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { Tag } from "@/types/blog";
 
-const tagsTempArray = [
-	{ name: "React", active: true },
-	{ name: "Tailwind", active: false },
-	{ name: "MySQL", active: false },
-	{ name: "Personal Development", active: false },
-	{ name: "HTML", active: false },
-	{ name: "CSS", active: false },
-	{ name: "Typescript", active: false },
-	{ name: "Interview", active: false },
-];
-export function TagList() {
-	const [tags, setTags] = useState(tagsTempArray);
+type TagListProps = {
+	tags: Tag[];
+	toggleTagActive: (name: string) => void;
+};
 
-	function toggleTagActive(name: string) {
-		const updatedTags = tags.map((tag) => {
-			if (tag.name === name) {
-				return { ...tag, active: !tag.active };
-			}
-			return tag;
-		});
-		setTags(updatedTags);
-	}
-
+export function TagList({ tags, toggleTagActive }: TagListProps) {
 	return (
 		<div className="flex flex-wrap gap-2 items-center">
 			{tags.map((tag) => (

@@ -5,23 +5,18 @@ import Link from "next/link";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import { v4 as uuidv4 } from "uuid";
+import { Blog, Tag } from "@/types/blog";
 
 const inter = Inter({ subsets: ["latin"] });
 
-type BlogProps = {
-	blog: {
-		id: number;
-		date: string;
-		title: string;
-		subtitle: string;
-		tags: string[];
-		body: string;
-		image: string;
-	};
+type BlogListItemProps = {
+	blog: Blog;
 };
 
-export function BlogItem({ blog }: BlogProps) {
+export function BlogListItem({ blog }: BlogListItemProps) {
+	const { title, subtitle, date, tagNames, image } = blog;
 	const [isHovered, setIsHovered] = useState(false);
+
 	return (
 		<Link
 			href="#"
@@ -31,7 +26,7 @@ export function BlogItem({ blog }: BlogProps) {
 		>
 			<div className="relative w-[312px] h-[174px] rounded-md overflow-hidden">
 				<Image
-					src={blog.image}
+					src={image}
 					alt="Article Thumbnail"
 					fill
 					sizes="100%"
@@ -49,17 +44,17 @@ export function BlogItem({ blog }: BlogProps) {
 					isHovered ? "underline" : ""
 				}`}
 			>
-				{blog.title}
+				{title}
 			</h3>
-			<p className="font-mono font-light text-[#75757D] text-xs">{blog.date}</p>
-			<p className={`${inter.className} text-sm font-light`}>{blog.subtitle}</p>
-			<ul className="flex gap-2 my-2">
-				{blog.tags.map((tag) => (
+			<p className="font-mono font-light text-[#75757D] text-xs">{date}</p>
+			<p className={`${inter.className} text-sm font-light`}>{subtitle}</p>
+			<ul className="flex flex-wrap gap-2 my-2">
+				{tagNames.map((tagName) => (
 					<li
 						key={uuidv4()}
 						className="font-mono text-sm py-[1px] px-[8px] h-fit rounded-[4px] border border-[#575763]"
 					>
-						{tag}
+						{tagName}
 					</li>
 				))}
 			</ul>
