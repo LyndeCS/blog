@@ -10,20 +10,22 @@ type BlogListProps = {
 };
 
 export function BlogList({ blogs, tags }: BlogListProps) {
-	// const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
-	const [selectedTags, setSelectedTags] = useState<Tag[]>(tags);
 	const [searchString, setSearchString] = useState("");
+
+	const activeTags = useMemo(() => {
+		return tags.filter((tag) => tag.active);
+	}, [tags]);
 
 	const filteredBlogs = useMemo(() => {
 		return blogs.filter((blog) => {
 			return (
 				(searchString === "" ||
 					blog.title.toLowerCase().includes(searchString.toLowerCase())) &&
-				(selectedTags.length === 0 ||
-					selectedTags.some((tag) => blog.tagNames.includes(tag.name)))
+				(activeTags.length === 0 ||
+					activeTags.every((tag) => blog.tagNames.includes(tag.name)))
 			);
 		});
-	}, [selectedTags, searchString, blogs]);
+	}, [blogs, tags, searchString]);
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-10 justify-between">

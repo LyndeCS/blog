@@ -1,6 +1,7 @@
 "use client";
 
 import { Tag } from "@/types/blog";
+import { useMemo } from "react";
 
 type TagListProps = {
 	tags: Tag[];
@@ -8,9 +9,17 @@ type TagListProps = {
 };
 
 export function TagList({ tags, toggleTagActive }: TagListProps) {
+	const sortedTags = useMemo(() => {
+		return tags.sort((a, b) => {
+			if (a.name < b.name) return -1;
+			if (a.name > b.name) return 1;
+			return 0;
+		});
+	}, [tags]);
+
 	return (
 		<div className="flex flex-wrap gap-2 items-center">
-			{tags.map((tag) => (
+			{sortedTags.map((tag) => (
 				<button
 					//todo: change key to id
 					key={tag.name}

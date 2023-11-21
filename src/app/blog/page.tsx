@@ -88,6 +88,15 @@ const TAGS = [
 	{ name: "CSS", active: false },
 	{ name: "Typescript", active: false },
 	{ name: "Interview", active: false },
+	{ name: "Back-end", active: false },
+	{ name: "Prisma", active: false },
+	{ name: "Next.js", active: false },
+	{ name: "Figma", active: false },
+	{ name: "Design", active: false },
+	{ name: "DALL-E", active: false },
+	{ name: "Front-end", active: false },
+	{ name: "Javascript", active: false },
+	{ name: "Node.js", active: false },
 ];
 
 export default function BlogPage() {
