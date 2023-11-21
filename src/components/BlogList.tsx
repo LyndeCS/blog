@@ -10,7 +10,8 @@ type BlogListProps = {
 };
 
 export function BlogList({ blogs, tags }: BlogListProps) {
-	const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
+	// const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
+	const [selectedTags, setSelectedTags] = useState<Tag[]>(tags);
 	const [searchString, setSearchString] = useState("");
 
 	const filteredBlogs = useMemo(() => {

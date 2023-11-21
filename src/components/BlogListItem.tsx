@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import { v4 as uuidv4 } from "uuid";
-import { Blog, Tag } from "@/types/blog";
+import { Blog } from "@/types/blog";
 
 const inter = Inter({ subsets: ["latin"] });
 

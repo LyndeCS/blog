@@ -90,7 +90,7 @@ const TAGS = [
 	{ name: "Interview", active: false },
 ];
 
-export default function blog() {
+export default function BlogPage() {
 	const [tags, setTags] = useState(TAGS);
 
 	function onToggleTagActive(name: string) {
