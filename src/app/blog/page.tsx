@@ -100,7 +100,12 @@ const TAGS = [
 ];
 
 export default function BlogPage() {
+	const [searchString, setSearchString] = useState("");
 	const [tags, setTags] = useState(TAGS);
+
+	function onSearchChange(searchString: string) {
+		setSearchString(searchString);
+	}
 
 	function onToggleTagActive(name: string) {
 		const updatedTags = tags.map((tag) => {
@@ -116,10 +121,10 @@ export default function BlogPage() {
 		<main className="max-w-[1000px] min-h-screen container mx-auto">
 			<div className="flex flex-col gap-y-4 mb-24">
 				<h1 className="text-4xl font-semibold">Blog</h1>
-				<Searchbar />
+				<Searchbar onSearchChange={onSearchChange} />
 				<TagList tags={tags} toggleTagActive={onToggleTagActive} />
 				<FeaturedItem />
-				<BlogList blogs={blogs} tags={tags} />
+				<BlogList blogs={blogs} tags={tags} searchString={searchString} />
 			</div>
 		</main>
 	);

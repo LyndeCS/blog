@@ -7,11 +7,10 @@ import { Blog, Tag } from "@/types/blog";
 type BlogListProps = {
 	blogs: Blog[];
 	tags: Tag[];
+	searchString: string;
 };
 
-export function BlogList({ blogs, tags }: BlogListProps) {
-	const [searchString, setSearchString] = useState("");
-
+export function BlogList({ blogs, tags, searchString }: BlogListProps) {
 	const activeTags = useMemo(() => {
 		return tags.filter((tag) => tag.active);
 	}, [tags]);
