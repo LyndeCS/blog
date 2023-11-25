@@ -19,7 +19,7 @@ export function BlogListItem({ blog }: BlogListItemProps) {
 
 	return (
 		<Link
-			href="#"
+			href={`/blog/sussy`}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			className="flex flex-col gap-2"

@@ -99,7 +99,7 @@ const TAGS = [
 	{ name: "Node.js", active: false },
 ];
 
-export default function BlogPage() {
+export default function BlogHomePage() {
 	const [searchString, setSearchString] = useState("");
 	const [tags, setTags] = useState(TAGS);
 
