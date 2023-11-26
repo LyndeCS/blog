@@ -3,8 +3,8 @@ title: "Embarking on a Two-Week Tune-Up: Building a Portfolio to Shine"
 date: 2023-11-21
 categories: ["Web Development", "Career Development"]
 tags: ["Portfolio Building", "Next.js", "Personal Growth"]
-author: "Your Name"
 summary: "Kicking off my two-week journey to enhance my web development portfolio and skills, sharing insights and progress along the way."
+slug: two-week-tune-up-introduction
 ---
 
 Introduction

@@ -1,7 +1,3 @@
-type BlogPageProps = {
-	slugString: string;
-};
-
-export default function BlogPage({ slugString }: BlogPageProps) {
-	return <h1>Blog Page</h1>;
+export default function BlogPage({ params }: { params: { slug: string } }) {
+	return <h1>Blog Page: {params.slug}</h1>;
 }
