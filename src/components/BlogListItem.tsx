@@ -5,28 +5,28 @@ import Link from "next/link";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import { v4 as uuidv4 } from "uuid";
-import { Blog } from "@/types/blog";
+import { BlogPostSummary } from "@/types/blog";
 
 const inter = Inter({ subsets: ["latin"] });
 
 type BlogListItemProps = {
-	blog: Blog;
+	blog: BlogPostSummary;
 };
 
 export function BlogListItem({ blog }: BlogListItemProps) {
-	const { title, subtitle, date, tagNames, image } = blog;
+	const { title, slug, summary, date, tags, thumbnail } = blog;
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
 		<Link
-			href={`/blog/${blog.id}`}
+			href={`/blog/${slug}`}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			className="flex flex-col gap-2"
 		>
 			<div className="relative w-[312px] h-[174px] rounded-md overflow-hidden">
 				<Image
-					src={image}
+					src={thumbnail}
 					alt="Article Thumbnail"
 					fill
 					sizes="100%"
@@ -47,9 +47,9 @@ export function BlogListItem({ blog }: BlogListItemProps) {
 				{title}
 			</h3>
 			<p className="font-mono font-light text-[#75757D] text-xs">{date}</p>
-			<p className={`${inter.className} text-sm font-light`}>{subtitle}</p>
+			<p className={`${inter.className} text-sm font-light`}>{summary}</p>
 			<ul className="flex flex-wrap gap-2 my-2">
-				{tagNames.map((tagName) => (
+				{tags.map((tagName) => (
 					<li
 						key={uuidv4()}
 						className="font-mono text-sm py-[1px] px-[8px] h-fit rounded-[4px] border border-[#575763]"

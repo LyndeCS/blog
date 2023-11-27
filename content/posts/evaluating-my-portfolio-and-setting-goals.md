@@ -1,10 +1,11 @@
 ---
 title: "Evaluating My Portfolio: Setting Goals for Amplified Impact"
-date: 2023-11-22
+date: "2023-11-22"
 categories: ["Portfolio Development", "Self-Assessment"]
 tags: ["Project Analysis", "Goal Setting"]
 summary: "A deep dive into my current portfolio and setting strategic goals to enhance its appeal to prospective employers."
-slug: evaluating-my-portfolio-and-setting-goals
+slug: "evaluating-my-portfolio-and-setting-goals"
+thumbnail: "/images/thumbnail2.png"
 ---
 
 ### **Evaluating My Portfolio: Setting Goals for Amplified Impact**
