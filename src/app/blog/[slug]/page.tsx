@@ -13,7 +13,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 	}, [params.slug]);
 
 	return (
-		<article>
+		<article className="max-w-[800px] container mx-auto">
 			<ReactMarkdown>{content}</ReactMarkdown>
 		</article>
 	);
