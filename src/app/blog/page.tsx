@@ -45,7 +45,7 @@ export default function BlogHomePage() {
 	}
 
 	return (
-		<main className="max-w-[1000px] min-h-screen container mx-auto">
+		<main className="max-w-[1000px] min-h-screen container mx-auto pt-40">
 			<div className="flex flex-col gap-y-4 mb-24">
 				<h1 className="text-4xl font-semibold">Blog</h1>
 				<Searchbar onSearchChange={onSearchChange} />

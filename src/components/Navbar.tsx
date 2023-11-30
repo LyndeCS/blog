@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar() {
 	return (
-		<nav className="py-12 mb-12 flex justify-between font-semibold">
+		<nav className="py-12 container mx-auto flex justify-between font-semibold absolute max-w-[1440px]">
 			<Link href="/">
 				<div>
 					<span className="text-secondary">{"<"}</span>
@@ -22,7 +22,7 @@ export function Navbar() {
 				<li className="hover:underline hover:decoration-2 underline-offset-2 decoration-secondary">
 					<Link href="/#contact">Contact</Link>
 				</li>
-				<li className="hover:underline decoration-secondary underline underline-offset-2 decoration-2">
+				<li className="hover:underline hover:decoration-2 underline-offset-2 decoration-secondary">
 					<Link href="/blog">Blog</Link>
 				</li>
 			</ul>
