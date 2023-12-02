@@ -17,10 +17,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className="snap-y snap-mandatory snap-always scroll-smooth">
-			<body
-				className={`${pjs.className} bg-[#141419] text-[#F4EEE3] container mx-auto max-w-[1440px]`}
-			>
+		<html lang="en">
+			<body className={`${pjs.className} bg-[#141419] text-[#F4EEE3]`}>
 				<Navbar />
 				{children}
 				<Footer />
