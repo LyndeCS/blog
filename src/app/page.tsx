@@ -18,10 +18,10 @@ export default function Home() {
 						.
 					</h1>
 					<h2 className="text-[3.5rem] mb-32">
-						I'm a web developer from London, Ontario.
+						I&apos;m a web developer from London, Ontario.
 					</h2>
 					<h3 className="opacity-50 italic text-[1.75rem] font-extralight mb-2">
-						I'm passionate about creating stylish and intuitive solutions.
+						I&apos;m passionate about creating stylish and intuitive solutions.
 					</h3>
 					<a
 						href="#portfolio"
@@ -38,9 +38,9 @@ export default function Home() {
 						<div className="w-1/4 h-min flex-shrink">
 							{/* Profile image */}
 							<img
-								src="headshot.png"
+								src="/images/headshot.png"
 								alt="Your Name"
-								className="rounded w-24 md:w-48 h-32 md:h-64 object-cover object-top"
+								className="rounded-full w-24 md:w-48 h-32 md:h-64 object-cover object-top"
 							/>
 
 							{/* Social media links */}
