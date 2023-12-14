@@ -109,7 +109,7 @@ export default function Home() {
 									<span className="text-meadow-500">Christopher Lynde</span>.
 								</h1>
 								<h1 className="font-bold text-white md:mb-12 text-xl xxs:text-2xl xs:text-3xl sm:text-4xl">
-									I'm a full-stack developer with a passion for creating{" "}
+									I&apos;m a full-stack developer with a passion for creating{" "}
 									<span className="underline italic decoration-meadow-500">
 										stylish and intuitive interfaces.
 									</span>
@@ -120,17 +120,18 @@ export default function Home() {
 							<div className="hidden md:block flex-grow text-lg lg:text-xl md:text-justify text-white">
 								<p className="mb-6">
 									I graduated from Fanshawe College, where I learned the
-									fundamentals of web development. Since then, I’ve been
+									fundamentals of web development. Since then, I&apos;ve been
 									committed to taking on diverse projects and exploring new
 									tools to broaden my understanding of the technical landscape.
 									My approach to work is defined by curiosity and determination;
-									I'm excited by challenges, and problem-solving brings a deep
-									sense of accomplishment.
+									I&apos;m excited by challenges, and problem-solving brings a
+									deep sense of accomplishment.
 								</p>
 
 								<p className="mb-6 ">
 									<span className="italic bg-shark-300">
-										Here are some technologies I'm comfortable working with:
+										Here are some technologies I&apos;m comfortable working
+										with:
 									</span>
 								</p>
 
