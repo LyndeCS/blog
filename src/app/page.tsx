@@ -27,7 +27,7 @@ export default function Home() {
 						href="#portfolio"
 						className="text-[1.25rem] text-primary max-w-fit"
 					>
-						// <span className="italic">see my work</span>
+						{"//"} <span className="italic ml-1">see my work</span>
 					</a>
 				</section>
 
