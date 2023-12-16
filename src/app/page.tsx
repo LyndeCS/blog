@@ -51,7 +51,7 @@ export default function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 										href="https://github.com/LyndeCS"
-										className="text-white ml-4 hover:text-meadow-500"
+										className="text-white ml-4 hover:text-secondary"
 									>
 										<span className="hidden md:inline-block">Follow on</span>{" "}
 										GitHub
@@ -63,7 +63,7 @@ export default function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 										href="https://www.linkedin.com/in/chrislynde/"
-										className="text-white ml-4 hover:text-meadow-500"
+										className="text-white ml-4 hover:text-secondary"
 									>
 										<span className="hidden md:inline-block">Follow on</span>{" "}
 										LinkedIn
@@ -75,7 +75,7 @@ export default function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 										href="https://twitter.com/lynde_chris"
-										className="text-white ml-4 hover:text-meadow-500"
+										className="text-white ml-4 hover:text-secondary"
 									>
 										<span className="hidden md:inline-block">Follow on</span>{" "}
 										Twitter
@@ -89,7 +89,7 @@ export default function Home() {
 									<FaEnvelope size={16} className="text-gray-500" />
 									<a
 										href="mailto:lyndechris@gmail.com"
-										className="text-white ml-4 hover:text-meadow-500"
+										className="text-white ml-4 hover:text-secondary"
 									>
 										<span className="hidden md:inline-block">
 											lyndechris@gmail.com
@@ -106,11 +106,11 @@ export default function Home() {
 							<div className="flex flex-col h-full md:h-min text-2xl xs:text-3xl sm:text-4xl sm:pl-4 md:pl-0 mt-[-6px]">
 								<h1 className="font-bold text-white mb-6">
 									Hi, my name is <br className="lg:hidden" />
-									<span className="text-meadow-500">Christopher Lynde</span>.
+									<span className="text-secondary">Christopher Lynde</span>.
 								</h1>
 								<h1 className="font-bold text-white md:mb-12 text-xl xxs:text-2xl xs:text-3xl sm:text-4xl">
 									I&apos;m a full-stack developer with a passion for creating{" "}
-									<span className="underline italic decoration-meadow-500">
+									<span className="underline italic decoration-secondary">
 										stylish and intuitive interfaces.
 									</span>
 								</h1>
