@@ -31,6 +31,17 @@ export default function Home() {
 					</a>
 				</section>
 
+				{/* PORTFOLIO SECTION */}
+				<section id="portfolio" className="h-screen snap-start">
+					<div className="flex">
+						<div className="space-y-4">
+							<h2 className="text-xl">Ajenda</h2>
+							<h2 className="text-xl">Streamwake</h2>
+							<h2 className="text-xl">Personal Tech Blog</h2>
+						</div>
+					</div>
+				</section>
+
 				{/* ABOUT SECTION */}
 				<section id="about" className="h-screen snap-start">
 					<div className="container mx-auto flex justify-start px-4 md:px-8 xl:px-0">
@@ -170,10 +181,6 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</section>
-				{/* PORTFOLIO SECTION */}
-				<section id="portfolio" className="h-screen snap-start">
-					<h2>Portfolio</h2>
 				</section>
 				{/* CONTACT SECTION */}
 				<section id="contact" className="h-screen snap-start">
