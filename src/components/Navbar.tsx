@@ -14,7 +14,7 @@ export function Navbar() {
 			</Link>
 			<ul className="flex gap-12">
 				<li className="hover:underline hover:decoration-2 underline-offset-2 decoration-secondary">
-					<Link href="/#about">About</Link>
+					<Link href="/about">About</Link>
 				</li>
 				<li className="hover:underline hover:decoration-2 underline-offset-2 decoration-secondary">
 					<Link href="/#portfolio">Portfolio</Link>
