@@ -30,8 +30,11 @@ export default function Home() {
 			</section>
 
 			{/* PORTFOLIO SECTION */}
-			<section id="portfolio" className="h-screen mt-[7px]">
-				<div className="flex">
+			<section
+				id="portfolio"
+				className="h-screen mt-[7px] bg-secondary bg-opacity-5"
+			>
+				<div className="flex container mx-auto max-w-[1440px]">
 					<div className="space-y-4">
 						<h2 className="text-xl">Ajenda</h2>
 						<h2 className="text-xl">Streamwake</h2>
