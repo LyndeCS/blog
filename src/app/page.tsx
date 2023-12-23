@@ -34,11 +34,17 @@ export default function Home() {
 				id="portfolio"
 				className="h-screen mt-[7px] bg-secondary bg-opacity-5"
 			>
-				<div className="flex container mx-auto max-w-[1440px]">
-					<div className="space-y-4">
-						<h2 className="text-xl">Ajenda</h2>
-						<h2 className="text-xl">Streamwake</h2>
-						<h2 className="text-xl">Personal Tech Blog</h2>
+				<div className="flex container mx-auto max-w-[1440px] h-[100%]">
+					<div className="space-y-4 flex justify-between h-[100%] w-[100%]">
+						<div className="p-2 border-white border h-1/2">
+							<h2 className="text-xl">Ajenda</h2>
+						</div>
+						<div className="p-2 border-white border h-1/2">
+							<h2 className="text-xl">Streamwake</h2>
+						</div>
+						<div className="p-2 border-white border h-1/2">
+							<h2 className="text-xl">Personal Tech Blog</h2>
+						</div>
 					</div>
 				</div>
 			</section>
