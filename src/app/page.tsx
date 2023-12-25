@@ -1,4 +1,6 @@
 import { Waves } from "@/components/Waves";
+import { VT323 } from "next/font/google";
+const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
 	return (
@@ -30,21 +32,32 @@ export default function Home() {
 			</section>
 
 			{/* PORTFOLIO SECTION */}
-			<section
-				id="portfolio"
-				className="h-screen mt-[7px] bg-secondary bg-opacity-5"
-			>
-				<div className="flex container mx-auto max-w-[1440px] h-[100%]">
-					<div className="space-y-4 flex justify-between h-[100%] w-[100%]">
-						<div className="p-2 border-white border h-1/2">
-							<h2 className="text-xl">Ajenda</h2>
-						</div>
-						<div className="p-2 border-white border h-1/2">
-							<h2 className="text-xl">Streamwake</h2>
-						</div>
-						<div className="p-2 border-white border h-1/2">
-							<h2 className="text-xl">Personal Tech Blog</h2>
-						</div>
+			<section id="portfolio" className="min-h-screen max-h-max mt-[7px]">
+				<div className="h-32 pt-4 w-full flex bg-[#113532] text-[#141419] space-x-8 overflow-hidden">
+					<h3 className="text-7xl -rotate-12">REACT</h3>
+					<h3 className="text-7xl -rotate-12">TAILWIND</h3>
+					<h3 className="text-7xl -rotate-12">NEXT.JS</h3>
+					<h3 className="text-7xl -rotate-12">TYPESCRIPT</h3>
+					<h3 className="text-7xl -rotate-12">MYSQL</h3>
+					<h3 className="text-7xl -rotate-12">NODE.JS</h3>
+				</div>
+				<div
+					className={`${vt323.className} text-7xl flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
+				>
+					<div className="w-full">
+						<h2 className="text-white">AJENDA</h2>
+						<p className="text-4xl">Task Management and Scheduling</p>
+						<p className="text-4xl">React Firebase MUI</p>
+					</div>
+					<div className="w-full">
+						<h2 className="text-white">STREAMWAKE</h2>
+						<p className="text-4xl">Discord bot for watch parties</p>
+						<p className="text-4xl">Node.js Discord.js MySQL</p>
+					</div>
+					<div className="w-full">
+						<h2 className="text-white">TECH BLOG</h2>
+						<p className="text-4xl">Succinct solutions for common challenges</p>
+						<p className="text-4xl">React Typescript Tailwind Next.js</p>
 					</div>
 				</div>
 			</section>

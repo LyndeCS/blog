@@ -18,7 +18,7 @@ export function Waves() {
 			<g className={styles.parallax}>
 				<use
 					x="48"
-					fill="rgba(21, 223, 182, 0.02"
+					fill="rgba(21, 223, 182, 0.02)"
 					xlinkHref="#gentle-wave"
 				></use>
 				<use
