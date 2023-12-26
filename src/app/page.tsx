@@ -33,7 +33,7 @@ export default function Home() {
 
 			{/* PORTFOLIO SECTION */}
 			<section id="portfolio" className="min-h-screen max-h-max mt-[7px]">
-				<div className="h-32 pt-4 w-full flex bg-[#113532] text-[#141419] space-x-8 overflow-hidden">
+				<div className="h-32 pt-4 w-full flex bg-gradient-to-b from-[#113532] text-[#141419] space-x-8 overflow-hidden">
 					<h3 className="text-7xl -rotate-12">REACT</h3>
 					<h3 className="text-7xl -rotate-12">TAILWIND</h3>
 					<h3 className="text-7xl -rotate-12">NEXT.JS</h3>
@@ -44,10 +44,15 @@ export default function Home() {
 				<div
 					className={`${vt323.className} text-7xl flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
 				>
-					<div className="w-full">
-						<h2 className="text-white">AJENDA</h2>
-						<p className="text-4xl">Task Management and Scheduling</p>
-						<p className="text-4xl">React Firebase MUI</p>
+					<div className="w-full flex">
+						<div className="w-1/2 border border-red-500">
+							<h2 className="text-white">AJENDA</h2>
+							<p className="text-4xl">Task Management and Scheduling</p>
+							<p className="text-4xl">React Firebase MUI</p>
+						</div>
+						<div className="border border-white h-full w-1/2 bg-white opacity-10">
+							test
+						</div>
 					</div>
 					<div className="w-full">
 						<h2 className="text-white">STREAMWAKE</h2>
