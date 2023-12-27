@@ -50,19 +50,31 @@ export default function Home() {
 							<p className="text-4xl">Task Management and Scheduling</p>
 							<p className="text-4xl">React Firebase MUI</p>
 						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10">
+						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
 							test
 						</div>
 					</div>
-					<div className="w-full">
-						<h2 className="text-white">STREAMWAKE</h2>
-						<p className="text-4xl">Discord bot for watch parties</p>
-						<p className="text-4xl">Node.js Discord.js MySQL</p>
+					<div className="w-full flex">
+						<div className="w-full">
+							<h2 className="text-white">STREAMWAKE</h2>
+							<p className="text-4xl">Discord bot for watch parties</p>
+							<p className="text-4xl">Node.js Discord.js MySQL</p>
+						</div>
+						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
+							test
+						</div>
 					</div>
-					<div className="w-full">
-						<h2 className="text-white">TECH BLOG</h2>
-						<p className="text-4xl">Succinct solutions for common challenges</p>
-						<p className="text-4xl">React Typescript Tailwind Next.js</p>
+					<div className="w-full flex">
+						<div className="w-full">
+							<h2 className="text-white">TECH BLOG</h2>
+							<p className="text-4xl">
+								Succinct solutions for common challenges
+							</p>
+							<p className="text-4xl">React Typescript Tailwind Next.js</p>
+						</div>
+						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
+							test
+						</div>
 					</div>
 				</div>
 			</section>
