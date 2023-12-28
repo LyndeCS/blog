@@ -1,6 +1,11 @@
 import { Waves } from "@/components/Waves";
-import { VT323 } from "next/font/google";
+import { VT323, IBM_Plex_Mono } from "next/font/google";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
+const ipm = IBM_Plex_Mono({
+	weight: ["200", "300", "400"],
+	style: ["normal", "italic"],
+	subsets: ["latin"],
+});
 
 export default function Home() {
 	return (
@@ -42,37 +47,45 @@ export default function Home() {
 					<h3 className="text-7xl -rotate-12">NODE.JS</h3>
 				</div>
 				<div
-					className={`${vt323.className} text-7xl flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
+					className={`${ipm.className} text-7xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
 				>
 					<div className="w-full flex">
-						<div className="w-1/2 border border-red-500">
+						<div className="w-full">
 							<h2 className="text-white">AJENDA</h2>
-							<p className="text-4xl">Task Management and Scheduling</p>
-							<p className="text-4xl">React Firebase MUI</p>
+							<p className="text-3xl font-extralight">
+								Task Management and Scheduling
+							</p>
+							<p className="text-3xl font-extralight">React Firebase MUI</p>
 						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
-							test
+						<div className="border border-white h-full w-1/2 bg-white shadow-glass">
+							<img src="/images/ajenda.webp" alt="ajenda" />
 						</div>
 					</div>
 					<div className="w-full flex">
 						<div className="w-full">
 							<h2 className="text-white">STREAMWAKE</h2>
-							<p className="text-4xl">Discord bot for watch parties</p>
-							<p className="text-4xl">Node.js Discord.js MySQL</p>
+							<p className="text-3xl font-extralight">
+								Discord bot for watch parties
+							</p>
+							<p className="text-3xl font-extralight">
+								Node.js Discord.js MySQL
+							</p>
 						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
+						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass">
 							test
 						</div>
 					</div>
 					<div className="w-full flex">
 						<div className="w-full">
 							<h2 className="text-white">TECH BLOG</h2>
-							<p className="text-4xl">
+							<p className="text-3xl font-extralight">
 								Succinct solutions for common challenges
 							</p>
-							<p className="text-4xl">React Typescript Tailwind Next.js</p>
+							<p className="text-3xl font-extralight">
+								React Typescript Tailwind Next.js
+							</p>
 						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass--">
+						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass">
 							test
 						</div>
 					</div>
