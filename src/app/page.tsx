@@ -49,17 +49,19 @@ export default function Home() {
 				<div
 					className={`${ipm.className} text-7xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
 				>
-					<div className="w-full flex">
-						<div className="w-full">
+					<div className="w-full flex hover:bg-white hover:opacity-5">
+						<div className="w-2/3 flex flex-col justify-between">
 							<h2 className="text-white">AJENDA</h2>
 							<p className="text-3xl font-extralight">
 								Task Management and Scheduling
 							</p>
 							<p className="text-3xl font-extralight">React Firebase MUI</p>
 						</div>
-						<div className="border border-white h-full w-1/2 bg-white shadow-glass">
-							<img src="/images/ajenda.webp" alt="ajenda" />
-						</div>
+						<img
+							src="/images/ajenda.webp"
+							alt="ajenda"
+							className="rounded aspect-video w-1/3 brightness-90"
+						/>
 					</div>
 					<div className="w-full flex">
 						<div className="w-full">
