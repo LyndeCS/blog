@@ -49,9 +49,9 @@ export default function Home() {
 				<div
 					className={`${ipm.className} text-7xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
 				>
-					<div className="w-full flex p-4">
-						<div className="w-2/3 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
-							<h2 className="text-white">AJENDA</h2>
+					<div className="w-full flex">
+						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
+							<h2 className="text-white leading-[3.5rem]">AJENDA</h2>
 							<p className="text-3xl font-extralight">
 								Task Management and Scheduling
 							</p>
@@ -64,7 +64,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className="w-full flex">
-						<div className="w-full">
+						<div className="w-2/3 pl-4 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
 							<h2 className="text-white">STREAMWAKE</h2>
 							<p className="text-3xl font-extralight">
 								Discord bot for watch parties
