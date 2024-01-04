@@ -64,7 +64,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className="w-full flex">
-						<div className="w-2/3 pl-4 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
+						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
 							<h2 className="text-white">STREAMWAKE</h2>
 							<p className="text-3xl font-extralight">
 								Discord bot for watch parties
@@ -78,7 +78,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="w-full flex">
-						<div className="w-full">
+						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
 							<h2 className="text-white">TECH BLOG</h2>
 							<p className="text-3xl font-extralight">
 								Succinct solutions for common challenges
