@@ -50,7 +50,7 @@ export default function Home() {
 					className={`${ipm.className} text-7xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
 				>
 					<div className="w-full flex">
-						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
+						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 hover:p-4 hover:duration-500 rounded-lg">
 							<h2 className="text-white leading-[3.5rem]">AJENDA</h2>
 							<p className="text-3xl font-extralight">
 								Task Management and Scheduling
