@@ -49,7 +49,7 @@ export default function Home() {
 				</div>
 
 				<div
-					className={`${ipm.className} text-5xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-white`}
+					className={`${ipm.className} text-5xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between text-white`}
 				>
 					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50">
 						<div className="flex my-8">
@@ -61,39 +61,46 @@ export default function Home() {
 								<p className="text-2xl font-light">React. Firebase. MUI.</p>
 							</div>
 							<img
-								src="/images/ajenda.webp"
+								src="/images/ajenda.png"
 								alt="ajenda"
 								className="aspect-video w-1/3 brightness-90"
 							/>
 						</div>
 					</div>
 
-					<div className="w-full flex">
-						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
-							<h2 className="text-white">STREAMWAKE</h2>
-							<p className="text-3xl font-extralight">
-								Discord bot for watch parties
-							</p>
-							<p className="text-3xl font-extralight">
-								Node.js Discord.js MySQL
-							</p>
-						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass">
-							test
+					<div className="w-full flex border-b-2 border-[#7d7d7d] border-opacity-50">
+						<div className="flex my-8">
+							<div className="w-2/3 px-4 py-2 flex flex-col justify-start hover:bg-white hover:bg-opacity-5 hover:duration-500 rounded-lg">
+								<h2 className="text-white mb-2">Streamwake</h2>
+								<p className="text-2xl font-light">Group-watch discord bot</p>
+								<p className="text-2xl font-light">
+									Node.js. Discord.js. MySQL.
+								</p>
+							</div>
+							<img
+								src="/images/streamwake.png"
+								alt="ajenda"
+								className="aspect-video w-1/3 brightness-90"
+							/>
 						</div>
 					</div>
-					<div className="w-full flex">
-						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
-							<h2 className="text-white">TECH BLOG</h2>
-							<p className="text-3xl font-extralight">
-								Succinct solutions for common challenges
-							</p>
-							<p className="text-3xl font-extralight">
-								React Typescript Tailwind Next.js
-							</p>
-						</div>
-						<div className="border border-white h-full w-1/2 bg-white opacity-10 shadow-glass">
-							test
+
+					<div className="w-full flex border-b-2 border-[#7d7d7d] border-opacity-50">
+						<div className="flex my-8">
+							<div className="w-2/3 px-4 py-2 flex flex-col justify-start hover:bg-white hover:bg-opacity-5 hover:duration-500 rounded-lg">
+								<h2 className="text-white mb-2">Tech Blog</h2>
+								<p className="text-2xl font-light">
+									Written articles about coding
+								</p>
+								<p className="text-2xl font-light">
+									React. Typescript. Tailwind.
+								</p>
+							</div>
+							<img
+								src="/images/techblog.png"
+								alt="ajenda"
+								className="aspect-video w-1/3 brightness-90"
+							/>
 						</div>
 					</div>
 				</div>
