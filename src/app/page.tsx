@@ -37,6 +37,7 @@ export default function Home() {
 			</section>
 
 			{/* PORTFOLIO SECTION */}
+
 			<section id="portfolio" className="min-h-screen max-h-max mt-[7px]">
 				<div className="h-32 pt-4 w-full flex bg-gradient-to-b from-[#113532] text-[#141419] space-x-8 overflow-hidden">
 					<h3 className="text-7xl -rotate-12">REACT</h3>
@@ -46,23 +47,27 @@ export default function Home() {
 					<h3 className="text-7xl -rotate-12">MYSQL</h3>
 					<h3 className="text-7xl -rotate-12">NODE.JS</h3>
 				</div>
+
 				<div
-					className={`${ipm.className} text-7xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-[#B9B9BA]`}
+					className={`${ipm.className} text-5xl font-light flex flex-col container mx-auto max-w-[1440px] h-[100%] my-48 justify-between space-y-48 text-white`}
 				>
-					<div className="w-full flex">
-						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 hover:p-4 hover:duration-500 rounded-lg">
-							<h2 className="text-white leading-[3.5rem]">AJENDA</h2>
-							<p className="text-3xl font-extralight">
-								Task Management and Scheduling
-							</p>
-							<p className="text-3xl font-extralight">React Firebase MUI</p>
+					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50">
+						<div className="flex my-8">
+							<div className="w-2/3 px-4 py-2 flex flex-col justify-start hover:bg-white hover:bg-opacity-5 hover:duration-500 rounded-lg">
+								<h2 className="text-white mb-2">Ajenda</h2>
+								<p className="text-2xl font-light">
+									Task management and scheduling
+								</p>
+								<p className="text-2xl font-light">React. Firebase. MUI.</p>
+							</div>
+							<img
+								src="/images/ajenda.webp"
+								alt="ajenda"
+								className="aspect-video w-1/3 brightness-90"
+							/>
 						</div>
-						<img
-							src="/images/ajenda.webp"
-							alt="ajenda"
-							className="rounded aspect-video w-1/3 brightness-90"
-						/>
 					</div>
+
 					<div className="w-full flex">
 						<div className="w-2/3 px-4 py-2 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 rounded-lg">
 							<h2 className="text-white">STREAMWAKE</h2>
