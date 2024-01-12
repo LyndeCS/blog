@@ -58,11 +58,14 @@ export default function Home() {
 				>
 					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center">
 						<div className="flex my-[16px] max-w-[1440px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
-							<div className="w-2/3 flex flex-col justify-start hover:bg-white hover:bg-opacity-5 hover:duration-500">
-								<h2 className="text-white">Ajenda</h2>
-								<p className="text-2xl text-[#8c8c8c] font-light">
-									Task management and scheduling
-								</p>
+							<div className="w-2/3 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 hover:duration-500">
+								<div>
+									<h2 className="text-white">Ajenda</h2>
+									<p className="text-2xl text-[#8c8c8c] font-light">
+										Task management and scheduling
+									</p>
+								</div>
+								<div></div>
 							</div>
 							<img
 								src="/images/ajenda.png"
@@ -89,7 +92,7 @@ export default function Home() {
 					</div>
 
 					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50">
-						<div className="flex my-[16px] max-w-[1440px] hover:bg-white hover:bg-opacity-50">
+						<div className="flex my-[16px] max-w-[1440-*px] hover:bg-white hover:bg-opacity-50">
 							<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
 								<h2 className="text-white">Tech Blog</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
