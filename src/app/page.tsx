@@ -33,7 +33,7 @@ export default function Home() {
 					</h3>
 					<a
 						href="#portfolio"
-						className="text-[1.75rem] text-primary max-w-fit font-light"
+						className="text-[1.75rem] text-white max-w-fit font-light"
 					>
 						{"//"} <span className="ml-1 text-2xl">see my work</span>
 					</a>
@@ -92,7 +92,7 @@ export default function Home() {
 					</div>
 
 					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50">
-						<div className="flex my-[16px] max-w-[1440-*px] hover:bg-white hover:bg-opacity-50">
+						<div className="flex my-[16px] max-w-[1440-px] hover:bg-white hover:bg-opacity-50">
 							<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
 								<h2 className="text-white">Tech Blog</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
