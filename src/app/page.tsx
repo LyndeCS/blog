@@ -56,9 +56,9 @@ export default function Home() {
 				<div
 					className={`${ipm.className} text-4xl flex flex-col my-48 justify-between`}
 				>
-					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center">
+					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center hover:cursor-pointer">
 						<div className="flex my-[16px] max-w-[1440px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
-							<div className="w-2/3 flex flex-col justify-between hover:bg-white hover:bg-opacity-5 hover:duration-500">
+							<div className="w-2/3 flex flex-col justify-between">
 								<div>
 									<h2 className="text-white">Ajenda</h2>
 									<p className="text-2xl text-[#8c8c8c] font-light">
@@ -70,14 +70,14 @@ export default function Home() {
 							<img
 								src="/images/ajenda.png"
 								alt="ajenda"
-								className="aspect-video w-1/3 saturate-50 opacity-50"
+								className="aspect-video w-1/3 saturate-50 opacity-50 hover:opacity-100"
 							/>
 						</div>
 					</div>
 
-					<div className="w-full flex justify-center">
+					<div className="w-full flex justify-center hover:cursor-pointer">
 						<div className="flex my-[16px] max-w-[1440px]">
-							<div className="w-2/3 flex flex-col hover:bg-white hover:bg-opacity-5 hover:duration-500">
+							<div className="w-2/3 flex flex-col">
 								<h2 className="text-white">Streamwake</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
 									Discord bot for watch parties
@@ -91,8 +91,8 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50">
-						<div className="flex my-[16px] max-w-[1440-px] hover:bg-white hover:bg-opacity-50">
+					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
+						<div className="flex my-[16px] max-w-[1440px] hover:bg-white hover:bg-opacity-50">
 							<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
 								<h2 className="text-white">Tech Blog</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
