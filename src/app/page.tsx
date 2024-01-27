@@ -35,7 +35,10 @@ export default function Home() {
 						href="#portfolio"
 						className="text-[1.75rem] text-white max-w-fit font-light"
 					>
-						{"//"} <span className="ml-1 text-2xl">see my work</span>
+						{"//"}{" "}
+						<span className="ml-1 text-3xl hover:text-primary animate-pulse">
+							see my work
+						</span>
 					</a>
 				</div>
 				{/* <Waves /> */}
