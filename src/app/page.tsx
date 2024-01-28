@@ -25,7 +25,7 @@ export default function Home() {
 							.
 						</h1>
 						<h2 className="text-[3.5rem] leading-[3.2rem]">
-							I bring digital dreams to life.
+							Web developer. I bring digital dreams to life.
 						</h2>
 					</div>
 					{/* <h3 className="text-[#B9B9BA] text-[1.75rem] font-extralight">
