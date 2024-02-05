@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar() {
 	return (
-		<nav className="py-12 container mx-auto flex justify-between font-semibold absolute max-w-[1440px] left-0 right-0">
+		<nav className="py-12 container mx-auto flex justify-between font-semibold absolute max-w-[1700px] left-0 right-0">
 			<Link href="/">
 				<div>
 					<span className="text-secondary">{"<"}</span>
