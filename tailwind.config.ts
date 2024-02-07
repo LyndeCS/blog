@@ -21,6 +21,15 @@ const config: Config = {
 			boxShadow: {
 				glass: "inset 2px rgb(255, 255, 255)",
 			},
+			keyframes: {
+				"pulse-color": {
+					"0%, 100%": { color: "#F4EEE4" },
+					"50%": { color: "#FF753A" },
+				},
+			},
+			animation: {
+				"pulse-color": "pulse-color 8s infinite",
+			},
 		},
 	},
 	plugins: [],
