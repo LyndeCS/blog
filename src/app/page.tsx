@@ -13,21 +13,21 @@ export default function Home() {
 			{/* HERO SECTION */}
 			<section id="hero" className={`h-screen flex flex-col`}>
 				<div className="container mx-auto max-w-[1700px] mt-64">
-					<div className="flex flex-col mb-32">
-						<h1 className="text-[7rem] font-bold tracking-tighter">
-							Hi, I'm{" "}
+					<div className="flex flex-col mb-32 w-2/3 justify-end">
+						<h1 className="text-[6rem] font-bold tracking-tighter">
+							Hi, I&apos;m{" "}
 							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
 								Chris Lynde
 							</span>
 							.
 						</h1>
-						<h2 className="text-[4rem] leading-[1rem]">
+						<h2 className="text-[3.5rem] leading-[1rem]">
 							A web developer specializing in UX/UI.
 						</h2>
 					</div>
 					<a
 						href="#portfolio"
-						className="text-[3rem] hover:underline hover:underline-offset-[6px]"
+						className="text-[2.5rem] hover:underline hover:underline-offset-[6px]"
 					>
 						See my work
 					</a>
