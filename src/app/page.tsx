@@ -50,7 +50,7 @@ export default function Home() {
 					className={`${ipm.className} text-4xl flex flex-col my-48 justify-between`}
 				>
 					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1440px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
+						<div className="flex my-[16px] max-w-[1700px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
 							<div className="w-2/3 flex flex-col justify-between">
 								<div>
 									<h2 className="text-white">Ajenda</h2>
@@ -69,7 +69,7 @@ export default function Home() {
 					</div>
 
 					<div className="w-full flex justify-center hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1440px]">
+						<div className="flex my-[16px] max-w-[1700px]">
 							<div className="w-2/3 flex flex-col">
 								<h2 className="text-white">Streamwake</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
@@ -85,7 +85,7 @@ export default function Home() {
 					</div>
 
 					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1440px] hover:bg-white hover:bg-opacity-50">
+						<div className="flex my-[16px] max-w-[1700px] hover:bg-white hover:bg-opacity-50">
 							<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
 								<h2 className="text-white">Tech Blog</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
