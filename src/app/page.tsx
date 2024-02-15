@@ -14,15 +14,17 @@ export default function Home() {
 			<section id="hero" className={`h-screen flex flex-col`}>
 				<div className="container mx-auto max-w-[1700px] mt-[16rem]">
 					<div className="flex flex-col mb-32">
-						<h1 className="text-[6rem] font-bold tracking-tighter">
+						<h1 className="text-[72px] font-bold tracking-tighter">
 							Hi, I&apos;m{" "}
 							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
 								Chris Lynde
 							</span>
-							.
+							. Web developer.
 						</h1>
-						<h2 className="text-[3.5rem] leading-[1rem]">
-							A web developer specializing in UX/UI.
+						<h2 className="text-[72px] leading-[3rem]">
+							{/* <span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text"> */}
+							I bring digital dreams to life.
+							{/* </span> */}
 						</h2>
 					</div>
 					<a
