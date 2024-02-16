@@ -22,9 +22,9 @@ export default function Home() {
 							. Web developer.
 						</h1>
 						<h2 className="text-[72px] leading-[3rem]">
-							{/* <span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text"> */}
-							I bring digital dreams to life.
-							{/* </span> */}
+							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
+								I bring digital dreams to life.
+							</span>
 						</h2>
 					</div>
 					<a
