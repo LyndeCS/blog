@@ -21,8 +21,8 @@ export default function Home() {
 							</span>
 							. Web developer.
 						</h1>
-						<h2 className="text-[72px] leading-[3rem]">
-							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
+						<h2 className="text-[72px] leading-[3rem] tracking-tighter">
+							<span className="bg-gradient-to-r from-[#747474] via-[#BBBBBB] to-[#747474] text-transparent bg-clip-text">
 								I bring digital dreams to life.
 							</span>
 						</h2>
@@ -31,7 +31,7 @@ export default function Home() {
 						href="#portfolio"
 						className="text-[2.5rem] hover:underline hover:underline-offset-[5px]"
 					>
-						See my work
+						// See my work
 					</a>
 				</div>
 			</section>
