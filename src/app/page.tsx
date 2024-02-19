@@ -1,6 +1,8 @@
 import { Waves } from "@/components/Waves";
 import { VT323, IBM_Plex_Mono } from "next/font/google";
 import { SlArrowDown } from "react-icons/sl";
+import { MdNearMe } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 const ipm = IBM_Plex_Mono({
 	weight: ["200", "300", "400"],
@@ -14,7 +16,7 @@ export default function Home() {
 			{/* HERO SECTION */}
 			<section id="hero" className={`h-screen flex flex-col`}>
 				<div className="flex flex-col container mx-auto max-w-[1700px] mt-[16rem] justify-between h-full">
-					<div className="flex flex-col mb-32">
+					<div className="flex flex-col">
 						<h1 className="text-[72px] font-bold tracking-tighter">
 							Hi, I&apos;m{" "}
 							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
@@ -22,19 +24,27 @@ export default function Home() {
 							</span>
 							. Web developer.
 						</h1>
-						<h2 className="text-[72px] leading-[3rem] tracking-tighter">
+						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28">
 							<span className="bg-gradient-to-r from-[#747474] via-[#C6C6C6] to-[#747474] text-transparent bg-clip-text">
 								I bring digital dreams to life.
 							</span>
 						</h2>
+						<div className="flex text-3xl space-x-20">
+							<div className="flex items-baseline space-x-2">
+								<MdNearMe size={26} color={"#747474"} />
+								<p className="bg-gradient-to-r from-[#747474] to-[#C6C6C6] text-transparent bg-clip-text">
+									Ontario, Canada
+								</p>
+							</div>
+							<div className="flex items-baseline space-x-3">
+								<IoMdMail size={22} color={"#9e9e9e"} />
+								<p className="bg-gradient-to-r from-[#C6C6C6] to-[#747474] text-transparent bg-clip-text">
+									lyndechris@gmail.com
+								</p>
+							</div>
+						</div>
 					</div>
-					<a
-						href="#portfolio"
-						className="text-[2.5rem] hover:underline hover:underline-offset-[5px]"
-					>
-						See my work
-					</a>
-					<div className="flex justify-center w-full opacity-50 ">
+					<div className="flex justify-center w-full opacity-50">
 						<a
 							href="#portfolio"
 							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center"
