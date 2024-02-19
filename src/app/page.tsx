@@ -29,7 +29,7 @@ export default function Home() {
 								I bring digital dreams to life.
 							</span>
 						</h2>
-						<div className="flex text-3xl space-x-20">
+						<div className="flex text-3xl tracking-tight space-x-16">
 							<div className="flex items-baseline space-x-2">
 								<MdNearMe size={26} color={"#747474"} />
 								<p className="bg-gradient-to-r from-[#747474] to-[#C6C6C6] text-transparent bg-clip-text">
