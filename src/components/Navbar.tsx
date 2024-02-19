@@ -5,11 +5,11 @@ export function Navbar() {
 		<nav className="py-12 container mx-auto flex justify-between font-semibold absolute max-w-[1700px] left-0 right-0">
 			<Link href="/">
 				<div>
-					<span className="text-secondary">{"<"}</span>
+					{/* <span className="text-secondary">{"<"}</span> */}
 					<span className="hover:underline decoration-secondary underline-offset-2 decoration-2">
 						Christopher Lynde
 					</span>
-					<span className="text-secondary">{" />"}</span>
+					{/* <span className="text-secondary">{" />"}</span> */}
 				</div>
 			</Link>
 			<ul className="flex gap-12">

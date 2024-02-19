@@ -1,6 +1,6 @@
 import { Waves } from "@/components/Waves";
 import { VT323, IBM_Plex_Mono } from "next/font/google";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { SlArrowDown } from "react-icons/sl";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 const ipm = IBM_Plex_Mono({
 	weight: ["200", "300", "400"],
@@ -13,7 +13,7 @@ export default function Home() {
 		<div className="bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIG9wYWNpdHk9IjEiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMTUxIiBudW1PY3RhdmVzPSI0IiBzZWVkPSIxNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXN1bHQ9InR1cmJ1bGVuY2UiPjwvZmVUdXJidWxlbmNlPgoJPGZlU3BlY3VsYXJMaWdodGluZyBzdXJmYWNlU2NhbGU9IjE2IiBzcGVjdWxhckNvbnN0YW50PSIxLjMiIHNwZWN1bGFyRXhwb25lbnQ9IjIwIiBsaWdodGluZy1jb2xvcj0iIzQzNDM0MyIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgcmVzdWx0PSJzcGVjdWxhckxpZ2h0aW5nIj4KICAgIAkJPGZlRGlzdGFudExpZ2h0IGF6aW11dGg9IjMiIGVsZXZhdGlvbj0iNTEiPjwvZmVEaXN0YW50TGlnaHQ+CiAgCTwvZmVTcGVjdWxhckxpZ2h0aW5nPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiMxNDE0MTkiPjwvcmVjdD48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0iIzQzNDM0MyIgZmlsdGVyPSJ1cmwoI25ubm9pc2UtZmlsdGVyKSI+PC9yZWN0Pjwvc3ZnPg==')]">
 			{/* HERO SECTION */}
 			<section id="hero" className={`h-screen flex flex-col`}>
-				<div className="container mx-auto max-w-[1700px] mt-[16rem]">
+				<div className="flex flex-col container mx-auto max-w-[1700px] mt-[16rem] justify-between h-full">
 					<div className="flex flex-col mb-32">
 						<h1 className="text-[72px] font-bold tracking-tighter">
 							Hi, I&apos;m{" "}
@@ -23,7 +23,7 @@ export default function Home() {
 							. Web developer.
 						</h1>
 						<h2 className="text-[72px] leading-[3rem] tracking-tighter">
-							<span className="bg-gradient-to-r from-[#747474] via-[#BBBBBB] to-[#747474] text-transparent bg-clip-text">
+							<span className="bg-gradient-to-r from-[#747474] via-[#C6C6C6] to-[#747474] text-transparent bg-clip-text">
 								I bring digital dreams to life.
 							</span>
 						</h2>
@@ -32,9 +32,16 @@ export default function Home() {
 						href="#portfolio"
 						className="text-[2.5rem] hover:underline hover:underline-offset-[5px]"
 					>
-						// See my work
+						See my work
 					</a>
-					<MdKeyboardArrowDown className="justify-center" />
+					<div className="flex justify-center w-full opacity-50 ">
+						<a
+							href="#portfolio"
+							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center"
+						>
+							<SlArrowDown size={24} />
+						</a>
+					</div>
 				</div>
 			</section>
 
