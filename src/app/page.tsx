@@ -1,5 +1,6 @@
 import { Waves } from "@/components/Waves";
 import { VT323, IBM_Plex_Mono } from "next/font/google";
+import { MdKeyboardArrowDown } from "react-icons/md";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 const ipm = IBM_Plex_Mono({
 	weight: ["200", "300", "400"],
@@ -33,6 +34,7 @@ export default function Home() {
 					>
 						// See my work
 					</a>
+					<MdKeyboardArrowDown className="justify-center" />
 				</div>
 			</section>
 
