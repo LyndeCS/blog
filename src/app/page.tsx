@@ -47,7 +47,7 @@ export default function Home() {
 					<div className="flex justify-center w-full opacity-50">
 						<a
 							href="#portfolio"
-							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center"
+							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce"
 						>
 							<SlArrowDown size={24} />
 						</a>
