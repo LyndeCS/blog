@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Christopher Lynde",
+	title: "Chris Lynde",
 	description: "Personal portfolio site",
 };
 
@@ -17,7 +17,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className="!scroll-smooth">
+		<html
+			lang="en"
+			className="!scroll-smooth snap-y snap-always snap-mandatory scrollbar-none"
+		>
 			<body className={`${pjs.className} bg-[#141419] text-[#F4EEE3]`}>
 				<Navbar />
 				{children}

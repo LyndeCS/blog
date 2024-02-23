@@ -7,7 +7,7 @@ export function Navbar() {
 				<div>
 					<span className="text-secondary">{"<"}</span>
 					<span className="hover:underline decoration-secondary underline-offset-2 decoration-2">
-						Christopher Lynde
+						Chris Lynde
 					</span>
 					<span className="text-secondary">{" />"}</span>
 				</div>
