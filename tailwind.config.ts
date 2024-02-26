@@ -26,9 +26,19 @@ const config: Config = {
 					"0%, 100%": { color: "#F4EEE4" },
 					"50%": { color: "#FF753A" },
 				},
+				"fade-in-up": {
+					"0%": { transform: "translateY(2rem)", opacity: "0%" },
+					"100%": { transform: "translateY(0)", opacity: "100%" },
+				},
+				"fade-in-down": {
+					"0%": { transform: "translateY(-2rem)", opacity: "0%" },
+					"100%": { transform: "translateY(0)", opacity: "100%" },
+				},
 			},
 			animation: {
 				"pulse-color": "pulse-color 8s infinite",
+				"fade-in-up": "fade-in-up 1s",
+				"fade-in-down": "fade-in-down 1s",
 			},
 		},
 	},

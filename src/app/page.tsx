@@ -17,19 +17,19 @@ export default function Home() {
 			<section id="hero" className={`h-screen flex flex-col snap-start`}>
 				<div className="flex flex-col container mx-auto max-w-[1700px] mt-[16rem] justify-between h-full">
 					<div className="flex flex-col">
-						<h1 className="text-[72px] font-bold tracking-tighter">
+						<h1 className="text-[72px] font-bold tracking-tighter animate-fade-in-up [animation-delay:_0.25s] opacity-0 [animation-fill-mode:forwards]">
 							Hi, I&apos;m{" "}
 							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
 								Chris Lynde
 							</span>
 							. Web developer.
 						</h1>
-						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28">
+						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28 animate-fade-in-up [animation-delay:_1.5s] opacity-0 [animation-fill-mode:forwards]">
 							<span className="bg-gradient-to-r from-[#747474] via-[#C6C6C6] to-[#747474] text-transparent bg-clip-text">
 								I bring digital dreams to life.
 							</span>
 						</h2>
-						<div className="flex text-3xl tracking-tight space-x-16 font-medium">
+						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in-up [animation-delay:_2.5s] opacity-0 [animation-fill-mode:forwards]">
 							<div className="flex items-baseline space-x-1">
 								<MdNearMe size={26} color={"#747474"} />
 								<p className="bg-gradient-to-r from-[#747474] to-[#C6C6C6] text-transparent bg-clip-text">
@@ -47,7 +47,7 @@ export default function Home() {
 					<div className="flex justify-center w-full opacity-50">
 						<a
 							href="#portfolio"
-							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce"
+							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce animate-fade-in-down [animation-fill-mode:forwards]"
 						>
 							<SlArrowDown size={24} />
 						</a>
