@@ -29,7 +29,7 @@ export default function Home() {
 								I bring digital dreams to life.
 							</span>
 						</h2>
-						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in-up [animation-delay:_2.5s] opacity-0 [animation-fill-mode:forwards]">
+						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in [animation-delay:_2.5s] opacity-0 [animation-fill-mode:forwards]">
 							<div className="flex items-baseline space-x-1">
 								<MdNearMe size={26} color={"#747474"} />
 								<p className="bg-gradient-to-r from-[#747474] to-[#C6C6C6] text-transparent bg-clip-text">
@@ -47,7 +47,7 @@ export default function Home() {
 					<div className="flex justify-center w-full opacity-50">
 						<a
 							href="#portfolio"
-							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce animate-fade-in-down [animation-fill-mode:forwards]"
+							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce-arrow animate-fade-in-down [animation-fill-mode:forwards] opacity-0 hover:opacity-100"
 						>
 							<SlArrowDown size={24} />
 						</a>

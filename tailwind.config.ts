@@ -26,19 +26,35 @@ const config: Config = {
 					"0%, 100%": { color: "#F4EEE4" },
 					"50%": { color: "#FF753A" },
 				},
+				"fade-in": {
+					"0%": { opacity: "0%" },
+					"100%": { opacity: "100%" },
+				},
 				"fade-in-up": {
 					"0%": { transform: "translateY(2rem)", opacity: "0%" },
 					"100%": { transform: "translateY(0)", opacity: "100%" },
 				},
 				"fade-in-down": {
-					"0%": { transform: "translateY(-2rem)", opacity: "0%" },
+					"0%": { transform: "translateY(-4rem)", opacity: "0%" },
 					"100%": { transform: "translateY(0)", opacity: "100%" },
+				},
+				"bounce-arrow": {
+					"0%, 100%": {
+						transform: "translateY(0)",
+						animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+					},
+					"50%": {
+						transform: "translateY(-25%)",
+						animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+					},
 				},
 			},
 			animation: {
 				"pulse-color": "pulse-color 8s infinite",
+				"fade-in": "fade-in 1s",
 				"fade-in-up": "fade-in-up 1s",
-				"fade-in-down": "fade-in-down 1s",
+				"fade-in-down": "fade-in-down 1s 2.5s",
+				"bounce-arrow": "bounce-arrow, fade-in-down 1s 2.5s",
 			},
 		},
 	},
