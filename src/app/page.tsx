@@ -59,7 +59,7 @@ export default function Home() {
 
 			<section
 				id="portfolio"
-				className="min-h-screen max-h-max mt-[7px] snap-start"
+				className="min-h-screen max-h-screen mt-[7px] snap-start"
 			>
 				{/* <div className="h-32 pt-4 w-full flex bg-gradient-to-b from-[#113532] text-[#141419] space-x-8 overflow-hidden">
 					<h3 className="text-7xl -rotate-12">REACT</h3>
@@ -71,7 +71,7 @@ export default function Home() {
 				</div> */}
 
 				<div
-					className={`${ipm.className} text-4xl flex flex-col justify-between`}
+					className={`${ipm.className} text-4xl flex flex-col justify-between h-1/3`}
 				>
 					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center hover:cursor-pointer">
 						<div className="flex my-[16px] max-w-[1700px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
@@ -129,7 +129,7 @@ export default function Home() {
 			{/* ABOUT SECTION */}
 
 			{/* CONTACT SECTION */}
-			<section id="contact" className="h-screen">
+			<section id="contact" className="h-screen snap-start">
 				<h2>Contact</h2>
 			</section>
 		</div>
