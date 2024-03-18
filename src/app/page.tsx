@@ -59,69 +59,56 @@ export default function Home() {
 
 			<section
 				id="portfolio"
-				className="min-h-screen max-h-screen mt-[7px] snap-start"
+				className={`${ipm.className} text-4xl flex flex-col justify-between snap-start`}
 			>
-				{/* <div className="h-32 pt-4 w-full flex bg-gradient-to-b from-[#113532] text-[#141419] space-x-8 overflow-hidden">
-					<h3 className="text-7xl -rotate-12">REACT</h3>
-					<h3 className="text-7xl -rotate-12">TAILWIND</h3>
-					<h3 className="text-7xl -rotate-12">NEXT.JS</h3>
-					<h3 className="text-7xl -rotate-12">TYPESCRIPT</h3>
-					<h3 className="text-7xl -rotate-12">MYSQL</h3>
-					<h3 className="text-7xl -rotate-12">NODE.JS</h3>
-				</div> */}
-
-				<div
-					className={`${ipm.className} text-4xl flex flex-col justify-between h-1/3`}
-				>
-					<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1700px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
-							<div className="w-2/3 flex flex-col justify-between">
-								<div>
-									<h2 className="text-white">Ajenda</h2>
-									<p className="text-2xl text-[#8c8c8c] font-light">
-										Task management and scheduling
-									</p>
-								</div>
-								<div></div>
-							</div>
-							<img
-								src="/images/ajenda.png"
-								alt="ajenda"
-								className="aspect-video w-1/3 saturate-50 opacity-50 hover:opacity-100"
-							/>
-						</div>
-					</div>
-
-					<div className="w-full flex justify-center hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1700px]">
-							<div className="w-2/3 flex flex-col">
-								<h2 className="text-white">Streamwake</h2>
+				<div className="w-full flex border-y-2 border-[#7d7d7d] border-opacity-50 justify-center hover:cursor-pointer">
+					<div className="flex my-[16px] max-w-[1700px] hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
+						<div className="w-2/3 flex flex-col justify-between">
+							<div>
+								<h2 className="text-white">Ajenda</h2>
 								<p className="text-2xl text-[#8c8c8c] font-light">
-									Discord bot for watch parties
+									Task management and scheduling
 								</p>
 							</div>
-							<img
-								src="/images/streamwake.png"
-								alt="ajenda"
-								className="aspect-video w-1/3 saturate-50 opacity-50"
-							/>
+							<div></div>
 						</div>
+						<img
+							src="/images/ajenda.png"
+							alt="ajenda"
+							className="aspect-video w-1/3 saturate-50 opacity-50 hover:opacity-100"
+						/>
 					</div>
+				</div>
 
-					<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
-						<div className="flex my-[16px] max-w-[1700px] hover:bg-white hover:bg-opacity-50">
-							<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
-								<h2 className="text-white">Tech Blog</h2>
-								<p className="text-2xl text-[#8c8c8c] font-light">
-									Written programming articles
-								</p>
-							</div>
-							<img
-								src="/images/techblog.png"
-								alt="ajenda"
-								className="aspect-video w-1/3 saturate-50 opacity-50"
-							/>
+				<div className="w-full flex justify-center hover:cursor-pointer">
+					<div className="flex my-[16px] max-w-[1700px]">
+						<div className="w-2/3 flex flex-col">
+							<h2 className="text-white">Streamwake</h2>
+							<p className="text-2xl text-[#8c8c8c] font-light">
+								Discord bot for watch parties
+							</p>
 						</div>
+						<img
+							src="/images/streamwake.png"
+							alt="ajenda"
+							className="aspect-video w-1/3 saturate-50 opacity-50"
+						/>
+					</div>
+				</div>
+
+				<div className="w-full flex justify-center border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
+					<div className="flex my-[16px] max-w-[1700px] hover:bg-white hover:bg-opacity-50">
+						<div className="w-2/3 flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
+							<h2 className="text-white">Tech Blog</h2>
+							<p className="text-2xl text-[#8c8c8c] font-light">
+								Written programming articles
+							</p>
+						</div>
+						<img
+							src="/images/techblog.png"
+							alt="ajenda"
+							className="aspect-video w-1/3 saturate-50 opacity-50"
+						/>
 					</div>
 				</div>
 			</section>
