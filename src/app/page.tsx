@@ -1,4 +1,3 @@
-import { Waves } from "@/components/Waves";
 import { VT323, IBM_Plex_Mono } from "next/font/google";
 import { SlArrowDown } from "react-icons/sl";
 import { MdNearMe } from "react-icons/md";
@@ -75,7 +74,7 @@ export default function Home() {
 						<img
 							src="/images/ajenda.png"
 							alt="ajenda"
-							className="aspect-video w-1/3 saturate-50 opacity-50 hover:opacity-100"
+							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
 						/>
 					</div>
 				</div>
@@ -91,7 +90,7 @@ export default function Home() {
 						<img
 							src="/images/streamwake.png"
 							alt="ajenda"
-							className="aspect-video w-1/3 saturate-50 opacity-50"
+							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
 						/>
 					</div>
 				</div>
@@ -107,17 +106,10 @@ export default function Home() {
 						<img
 							src="/images/techblog.png"
 							alt="ajenda"
-							className="aspect-video w-1/3 saturate-50 opacity-50"
+							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
 						/>
 					</div>
 				</div>
-			</section>
-
-			{/* ABOUT SECTION */}
-
-			{/* CONTACT SECTION */}
-			<section id="contact" className="h-screen snap-start">
-				<h2>Contact</h2>
 			</section>
 		</div>
 	);
