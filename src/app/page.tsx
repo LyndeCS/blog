@@ -23,12 +23,12 @@ export default function Home() {
 							</span>
 							. Web developer.
 						</h1>
-						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28 animate-fade-in-up [animation-delay:_1.5s] opacity-0 [animation-fill-mode:forwards]">
+						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28 animate-fade-in-up [animation-delay:_0.5s] opacity-0 [animation-fill-mode:forwards]">
 							<span className="bg-gradient-to-r from-[#747474] via-[#C6C6C6] to-[#747474] text-transparent bg-clip-text">
 								I bring digital dreams to life.
 							</span>
 						</h2>
-						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in [animation-delay:_2.5s] opacity-0 [animation-fill-mode:forwards]">
+						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in [animation-delay:_1s] opacity-0 [animation-fill-mode:forwards]">
 							<div className="flex items-baseline space-x-1">
 								<MdNearMe size={26} color={"#747474"} />
 								<p className="bg-gradient-to-r from-[#747474] to-[#C6C6C6] text-transparent bg-clip-text">
