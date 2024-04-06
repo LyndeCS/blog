@@ -60,10 +60,11 @@ export default function Home() {
 				id="portfolio"
 				className={`${ipm.className} text-4xl flex flex-col justify-between snap-start`}
 			>
-				<div className="w-[1700px] self-center flex border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
-					<div className="flex my-[16px] max-w-full hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
+				<div className="w-[1700px] self-center flex hover:cursor-pointer">
+					<div className="flex my-[24px] max-w-full hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
+						<div className="mr-24">01</div>
 						<div className="grow flex flex-col">
-							<h2 className="text-white">Ajenda</h2>
+							<h2 className="text-white font-light">Ajenda</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
 								Task management and scheduling
 							</p>
@@ -77,9 +78,10 @@ export default function Home() {
 				</div>
 
 				<div className="w-full flex justify-center hover:cursor-pointer">
-					<div className="flex my-[16px] max-w-[1700px]">
+					<div className="flex my-[24px] max-w-[1700px]">
+						<div className="mr-24">02</div>
 						<div className="grow flex flex-col">
-							<h2 className="text-white">Streamwake</h2>
+							<h2 className="text-white font-light">Streamwake</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
 								Discord bot for watch parties
 							</p>
@@ -92,10 +94,11 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="w-[1700px] self-center flex border-y-2 border-[#7d7d7d] border-opacity-50 hover:cursor-pointer">
-					<div className="flex my-[16px] max-w-full hover:bg-white hover:bg-opacity-50">
+				<div className="w-[1700px] self-center flex hover:cursor-pointer">
+					<div className="flex my-[24px] max-w-full hover:bg-white hover:bg-opacity-50">
+						<div className="mr-24">03</div>
 						<div className="grow flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
-							<h2 className="text-white">Tech Blog</h2>
+							<h2 className="text-white font-light">Tech Blog</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
 								Written programming articles
 							</p>
