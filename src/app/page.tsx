@@ -57,18 +57,18 @@ export default function Home() {
 				</div>
 
 				{/* FOOTER */}
-				<div className="flex flex-col h-[112px] max-w-[1700px] mx-auto gap-[24px]">
+				<div className="flex flex-col h-[112px] max-w-[1700px] mx-auto">
 					{/* DIVIDER */}
 					<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
 					{/* CONTENT */}
 					<div className="flex flex-row h-full">
 						{/* DOWN ARROWS */}
-						<div className="flex flex-row w-[48px] h-full justify-around">
+						<div className="flex flex-row w-[48px] h-full justify-around items-center">
 							<div className="h-[16px] w-[2px] bg-[#4E4E4E]"></div>
 							<div className="h-[16px] w-[2px] bg-[#4E4E4E]"></div>
 						</div>
 						{/* COPY */}
-						<div className="flex flex-row text-[#747474] justify-between w-full h-full pl-[113px]">
+						<div className="flex flex-row text-[#747474] justify-between w-full h-full pl-[113px] items-center">
 							<p>CURRENTLY WORKING AT HOME XD</p>
 							<p>PREVIOUSLY FRONT END AT ALSO HOME XD</p>
 							<p>FORMER INTERN AT ALSO ALSO HOME</p>
