@@ -13,9 +13,20 @@ export default function Home() {
 	return (
 		<div className="bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIG9wYWNpdHk9IjEiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMTUxIiBudW1PY3RhdmVzPSI0IiBzZWVkPSIxNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXN1bHQ9InR1cmJ1bGVuY2UiPjwvZmVUdXJidWxlbmNlPgoJPGZlU3BlY3VsYXJMaWdodGluZyBzdXJmYWNlU2NhbGU9IjE2IiBzcGVjdWxhckNvbnN0YW50PSIxLjMiIHNwZWN1bGFyRXhwb25lbnQ9IjIwIiBsaWdodGluZy1jb2xvcj0iIzQzNDM0MyIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgcmVzdWx0PSJzcGVjdWxhckxpZ2h0aW5nIj4KICAgIAkJPGZlRGlzdGFudExpZ2h0IGF6aW11dGg9IjMiIGVsZXZhdGlvbj0iNTEiPjwvZmVEaXN0YW50TGlnaHQ+CiAgCTwvZmVTcGVjdWxhckxpZ2h0aW5nPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiMxNDE0MTkiPjwvcmVjdD48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0iIzQzNDM0MyIgZmlsdGVyPSJ1cmwoI25ubm9pc2UtZmlsdGVyKSI+PC9yZWN0Pjwvc3ZnPg==')]">
 			{/* HERO SECTION */}
-			<section id="hero" className={`h-screen flex flex-col snap-start`}>
-				<div className="flex flex-col container mx-auto max-w-[1700px] mt-[16rem] justify-between h-full">
-					<div className="flex flex-col">
+			<section
+				id="hero"
+				className={`h-screen flex flex-col snap-start justify-between`}
+			>
+				{/* MAIN CONTENT */}
+				<div className="flex flex-row container mx-auto max-w-[1700px] mt-[16rem] gap-[113px]">
+					{/* SIDE NAV */}
+					<div className="flex flex-col gap-4 w-[48px] my-auto">
+						<div className="w-[32px] h-[2px] bg-gray-500"></div>
+						<div className="w-[32px] h-[2px] bg-gray-500"></div>
+						<div className="w-[32px] h-[2px] bg-gray-500"></div>
+					</div>
+					{/* HERO COPY */}
+					<div className="flex flex-col grow">
 						<h1 className="text-[72px] font-bold tracking-tighter animate-fade-in-up [animation-delay:_0.25s] opacity-0 [animation-fill-mode:forwards]">
 							Hi, I&apos;m{" "}
 							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
@@ -43,13 +54,25 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="flex justify-center w-full opacity-50">
-						<a
-							href="#portfolio"
-							className="w-full pb-6 pt-12 flex hover:cursor-pointer justify-center hover:animate-bounce-arrow animate-fade-in-down [animation-fill-mode:forwards] opacity-0 hover:opacity-100"
-						>
-							<SlArrowDown size={24} />
-						</a>
+				</div>
+
+				{/* FOOTER */}
+				<div className="flex flex-col h-[112px] max-w-[1700px] mx-auto gap-[24px]">
+					{/* DIVIDER */}
+					<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
+					{/* CONTENT */}
+					<div className="flex flex-row h-full">
+						{/* DOWN ARROWS */}
+						<div className="flex flex-row w-[48px] h-full justify-around">
+							<div className="h-[16px] w-[2px] bg-[#4E4E4E]"></div>
+							<div className="h-[16px] w-[2px] bg-[#4E4E4E]"></div>
+						</div>
+						{/* COPY */}
+						<div className="flex flex-row text-[#747474] justify-between w-full h-full pl-[113px]">
+							<p>CURRENTLY WORKING AT HOME XD</p>
+							<p>PREVIOUSLY FRONT END AT ALSO HOME XD</p>
+							<p>FORMER INTERN AT ALSO ALSO HOME</p>
+						</div>
 					</div>
 				</div>
 			</section>
