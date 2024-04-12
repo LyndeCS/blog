@@ -1,13 +1,8 @@
-import { VT323, IBM_Plex_Mono } from "next/font/google";
+import { VT323 } from "next/font/google";
 import { SlArrowDown } from "react-icons/sl";
 import { MdNearMe } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
-const ipm = IBM_Plex_Mono({
-	weight: ["200", "300", "400"],
-	style: ["normal", "italic"],
-	subsets: ["latin"],
-});
 
 import { v4 as uuidv4 } from "uuid";
 import { ProjectListItem } from "@/components/ProjectListItem";
@@ -48,9 +43,9 @@ export default function Home() {
 				<div className="flex flex-row container mx-auto max-w-[1700px] mt-[16rem] gap-[113px]">
 					{/* SIDE NAV */}
 					<div className="flex flex-col gap-4 w-[48px] my-auto">
+						<div className="w-[32px] h-[2px] bg-[#F4EEE3]"></div>
 						<div className="w-[32px] h-[2px] bg-gray-500"></div>
-						<div className="w-[32px] h-[2px] bg-gray-500"></div>
-						<div className="w-[32px] h-[2px] bg-gray-500"></div>
+						{/* <div className="w-[32px] h-[2px] bg-gray-500"></div> */}
 					</div>
 					{/* HERO COPY */}
 					<div className="flex flex-col grow">
@@ -105,22 +100,32 @@ export default function Home() {
 			</section>
 
 			{/* PORTFOLIO SECTION */}
-
 			<section
 				id="portfolio"
-				className={`text-4xl flex flex-col justify-between snap-start`}
+				className={`text-4xl pt-32 max-w-[1700px] gap-[113px] mx-auto flex flex-row snap-start h-screen`}
 			>
-				<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
-				{projectCardItems.map((cardSummary) => {
-					return (
-						<>
-							<ProjectListItem key={cardSummary.id} card={cardSummary} />
-							<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
-						</>
-					);
-				})}
+				{/* SIDE NAV */}
+				<div className="flex flex-col gap-4 w-[48px] my-auto">
+					<div className="w-[32px] h-[2px] bg-gray-500"></div>
+					<div className="w-[32px] h-[2px] bg-[#F4EEE3]"></div>
+					{/* <div className="w-[32px] h-[2px] bg-gray-500"></div> */}
+				</div>
 
-				{/* <div className="w-[1700px] self-center flex hover:cursor-pointer">
+				{/* PROJECT LIST */}
+				<div className="w-full">
+					<div className="w-full h-[2px] bg-[#4E4E4E] mx-auto" />
+					{projectCardItems.map((cardSummary) => {
+						return (
+							<>
+								<ProjectListItem key={cardSummary.id} card={cardSummary} />
+								<div className="w-full h-[2px] bg-[#4E4E4E] mx-auto" />
+							</>
+						);
+					})}
+				</div>
+			</section>
+
+			{/* <div className="w-[1700px] self-center flex hover:cursor-pointer">
 					<div className="flex my-[24px] max-w-full hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
 						<div className="grow flex flex-col">
 							<h2 className="text-white font-light">Ajenda</h2>
@@ -167,7 +172,6 @@ export default function Home() {
 						/>
 					</div>
 				</div> */}
-			</section>
 		</div>
 	);
 }
