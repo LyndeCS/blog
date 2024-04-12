@@ -9,6 +9,33 @@ const ipm = IBM_Plex_Mono({
 	subsets: ["latin"],
 });
 
+import { v4 as uuidv4 } from "uuid";
+import { ProjectListItem } from "@/components/ProjectListItem";
+
+const projectCardItems = [
+	{
+		id: uuidv4(),
+		heading: "AJENDA",
+		subHeading: "Task Manager/Scheduler",
+		tagNames: [""],
+		image: "",
+	},
+	{
+		id: uuidv4(),
+		heading: "STREAMWAKE",
+		subHeading: "Group-watch Discord Bot",
+		tagNames: [""],
+		image: "",
+	},
+	{
+		id: uuidv4(),
+		heading: "TECH BLOG",
+		subHeading: "Written Programming Articles",
+		tagNames: [""],
+		image: "",
+	},
+];
+
 export default function Home() {
 	return (
 		<div className="bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIG9wYWNpdHk9IjEiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMTUxIiBudW1PY3RhdmVzPSI0IiBzZWVkPSIxNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXN1bHQ9InR1cmJ1bGVuY2UiPjwvZmVUdXJidWxlbmNlPgoJPGZlU3BlY3VsYXJMaWdodGluZyBzdXJmYWNlU2NhbGU9IjE2IiBzcGVjdWxhckNvbnN0YW50PSIxLjMiIHNwZWN1bGFyRXhwb25lbnQ9IjIwIiBsaWdodGluZy1jb2xvcj0iIzQzNDM0MyIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgcmVzdWx0PSJzcGVjdWxhckxpZ2h0aW5nIj4KICAgIAkJPGZlRGlzdGFudExpZ2h0IGF6aW11dGg9IjMiIGVsZXZhdGlvbj0iNTEiPjwvZmVEaXN0YW50TGlnaHQ+CiAgCTwvZmVTcGVjdWxhckxpZ2h0aW5nPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiMxNDE0MTkiPjwvcmVjdD48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0iIzQzNDM0MyIgZmlsdGVyPSJ1cmwoI25ubm9pc2UtZmlsdGVyKSI+PC9yZWN0Pjwvc3ZnPg==')]">
@@ -81,11 +108,20 @@ export default function Home() {
 
 			<section
 				id="portfolio"
-				className={`${ipm.className} text-4xl flex flex-col justify-between snap-start`}
+				className={`text-4xl flex flex-col justify-between snap-start`}
 			>
-				<div className="w-[1700px] self-center flex hover:cursor-pointer">
+				<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
+				{projectCardItems.map((cardSummary) => {
+					return (
+						<>
+							<ProjectListItem key={cardSummary.id} card={cardSummary} />
+							<div className="w-[1700px] h-[2px] bg-[#4E4E4E] mx-auto"></div>
+						</>
+					);
+				})}
+
+				{/* <div className="w-[1700px] self-center flex hover:cursor-pointer">
 					<div className="flex my-[24px] max-w-full hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
-						<div className="mr-24">01</div>
 						<div className="grow flex flex-col">
 							<h2 className="text-white font-light">Ajenda</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
@@ -102,7 +138,6 @@ export default function Home() {
 
 				<div className="w-full flex justify-center hover:cursor-pointer">
 					<div className="flex my-[24px] max-w-[1700px]">
-						<div className="mr-24">02</div>
 						<div className="grow flex flex-col">
 							<h2 className="text-white font-light">Streamwake</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
@@ -119,7 +154,6 @@ export default function Home() {
 
 				<div className="w-[1700px] self-center flex hover:cursor-pointer">
 					<div className="flex my-[24px] max-w-full hover:bg-white hover:bg-opacity-50">
-						<div className="mr-24">03</div>
 						<div className="grow flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
 							<h2 className="text-white font-light">Tech Blog</h2>
 							<p className="text-2xl text-[#8c8c8c] font-light">
@@ -132,7 +166,7 @@ export default function Home() {
 							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
 						/>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</div>
 	);
