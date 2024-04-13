@@ -24,38 +24,59 @@ export function ProjectListItem({ card }: ProjectListItemProps) {
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			<div className="w-full flex flex-row justify-between gap-[24px]">
+			<div className="w-full flex flex-row justify-between gap-[24px] overflow-hidden">
 				{/* IMAGE */}
-				<Image
-					alt={alt}
-					src={image}
-					width="256"
-					height="144"
-					className={`${isHovered ? "block" : "hidden"}`}
-				/>
-				{/* COPY */}
-				<div className="w-full flex justify-between mt-[24px] leading-[0.5]">
+				<div className="flex w-full">
+					<Image
+						alt={alt}
+						src={image}
+						width={256}
+						height={144}
+						className={`${
+							isHovered ? "opacity-100" : "opacity-0 ml-[-280px]"
+						} transition-all duration-500 inline-block max-w-fit`}
+					/>
 					<h2
 						className={`${
 							isHovered ? "text-[#F4EEE3]" : "text-[#AFAFAF]"
-						} font-medium text-[64px]`}
+						} font-medium text-[64px] inline-block pl-[24px] w-full leading-0`}
 					>
 						{heading}
 					</h2>
-					<div className="w-[512px] flex flex-row justify-between">
-						<h3
-							className={`${ipm.className} text-[20px] inline-block align-top ${
-								isHovered ? "text-[#F4EEE3]" : "text-[#AFAFAF]"
-							}`}
-						>
-							{subHeading}
-						</h3>
-						<FaExpandArrowsAlt
+				</div>
+				{/* COPY */}
+				<div className="w-[512px] flex flex-col justify-between mt-[24px] ">
+					<h3
+						className={`text-[20px] inline-block align-top leading-[0.5] text-right tracking-wide ${
+							isHovered ? "text-[#AFAFAF]" : "text-[#AFAFAF]"
+						}`}
+					>
+						{subHeading}
+					</h3>
+					{/* TAGNAMES */}
+					<div
+						className={`${
+							ipm.className
+						} flex flex-row justify-end text-[#868686] gap-[12px] font-medium transition-all duration-500 ${
+							isHovered ? "opacity-100" : "opacity-0 translate-x-[256px]"
+						}`}
+					>
+						{tagNames.map((tagName, index) => {
+							return (
+								<>
+									<p>{tagName}</p>
+									{index < tagNames.length - 1 && (
+										<div className="bg-[#4E4E4E] w-[1px] h-full" />
+									)}
+								</>
+							);
+						})}
+					</div>
+					{/* <FaExpandArrowsAlt
 							size={16}
 							color={"#F4EEE3"}
 							className={`${isHovered ? "block" : "hidden"}`}
-						/>
-					</div>
+						/> */}
 				</div>
 			</div>
 		</div>
