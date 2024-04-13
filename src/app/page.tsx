@@ -10,24 +10,27 @@ import { ProjectListItem } from "@/components/ProjectListItem";
 const projectCardItems = [
 	{
 		id: uuidv4(),
+		alt: "Ajenda app",
 		heading: "AJENDA",
 		subHeading: "Task Manager/Scheduler",
 		tagNames: [""],
-		image: "",
+		image: "/images/ajenda.png",
 	},
 	{
 		id: uuidv4(),
+		alt: "Streamwake discord bot",
 		heading: "STREAMWAKE",
 		subHeading: "Group-watch Discord Bot",
 		tagNames: [""],
-		image: "",
+		image: "/images/streamwake.png",
 	},
 	{
 		id: uuidv4(),
+		alt: "Personal tech blog",
 		heading: "TECH BLOG",
 		subHeading: "Written Programming Articles",
 		tagNames: [""],
-		image: "",
+		image: "/images/techblog.png",
 	},
 ];
 
@@ -102,7 +105,7 @@ export default function Home() {
 			{/* PORTFOLIO SECTION */}
 			<section
 				id="portfolio"
-				className={`text-4xl pt-32 max-w-[1700px] gap-[113px] mx-auto flex flex-row snap-start h-screen`}
+				className={`pt-32 max-w-[1700px] gap-[113px] mx-auto flex flex-row snap-start h-screen`}
 			>
 				{/* SIDE NAV */}
 				<div className="flex flex-col gap-4 w-[48px] my-auto">
@@ -124,54 +127,6 @@ export default function Home() {
 					})}
 				</div>
 			</section>
-
-			{/* <div className="w-[1700px] self-center flex hover:cursor-pointer">
-					<div className="flex my-[24px] max-w-full hover:bg-gradient-to-r hover:from-[#15E9B4] hover:to-[#15ACC1] hover:text-transparent hover:bg-clip-text">
-						<div className="grow flex flex-col">
-							<h2 className="text-white font-light">Ajenda</h2>
-							<p className="text-2xl text-[#8c8c8c] font-light">
-								Task management and scheduling
-							</p>
-						</div>
-						<img
-							src="/images/ajenda.png"
-							alt="ajenda"
-							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
-						/>
-					</div>
-				</div>
-
-				<div className="w-full flex justify-center hover:cursor-pointer">
-					<div className="flex my-[24px] max-w-[1700px]">
-						<div className="grow flex flex-col">
-							<h2 className="text-white font-light">Streamwake</h2>
-							<p className="text-2xl text-[#8c8c8c] font-light">
-								Discord bot for watch parties
-							</p>
-						</div>
-						<img
-							src="/images/streamwake.png"
-							alt="ajenda"
-							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
-						/>
-					</div>
-				</div>
-
-				<div className="w-[1700px] self-center flex hover:cursor-pointer">
-					<div className="flex my-[24px] max-w-full hover:bg-white hover:bg-opacity-50">
-						<div className="grow flex flex-col hover:text hover:bg-white hover:bg-opacity-[0.02] hover:duration-500">
-							<h2 className="text-white font-light">Tech Blog</h2>
-							<p className="text-2xl text-[#8c8c8c] font-light">
-								Written programming articles
-							</p>
-						</div>
-						<img
-							src="/images/techblog.png"
-							alt="ajenda"
-							className="aspect-video w-1/4 saturate-50 opacity-50 hover:saturate-100 hover:opacity-100"
-						/>
-					</div>
-				</div> */}
 		</div>
 	);
 }
