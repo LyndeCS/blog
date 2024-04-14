@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Image from "next/image";
 import { cardSummary } from "@/types/portfolio";
 import { FaExpandArrowsAlt } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 import { IBM_Plex_Mono } from "next/font/google";
 const ipm = IBM_Plex_Mono({
 	weight: ["200", "300", "400"],
@@ -34,12 +35,13 @@ export function ProjectListItem({ card }: ProjectListItemProps) {
 						height={144}
 						className={`${
 							isHovered ? "opacity-100" : "opacity-0 ml-[-280px]"
-						} transition-all duration-500 inline-block max-w-fit`}
+						} transition-all duration-500 max-w-fit`}
 					/>
+					{/* HEADER */}
 					<h2
 						className={`${
-							isHovered ? "text-[#F4EEE3]" : "text-[#AFAFAF]"
-						} font-medium text-[64px] inline-block pl-[24px] w-full leading-0`}
+							isHovered ? "text-[#AFAFAF]" : "text-[#AFAFAF]"
+						} font-medium text-[64px] pl-[24px] w-full leading-none align-bottom transition-all duration-500 pt-2`}
 					>
 						{heading}
 					</h2>
@@ -57,18 +59,19 @@ export function ProjectListItem({ card }: ProjectListItemProps) {
 					<div
 						className={`${
 							ipm.className
-						} flex flex-row justify-end text-[#868686] gap-[12px] font-medium transition-all duration-500 ${
-							isHovered ? "opacity-100" : "opacity-0 translate-x-[256px]"
+						} flex flex-row justify-end text-[#696969] text-sm gap-[8px] font-medium transition-all duration-500 items-center ${
+							isHovered ? "opacity-100" : "opacity-0 translate-y-[40px]"
 						}`}
 					>
 						{tagNames.map((tagName, index) => {
 							return (
-								<>
+								<Fragment key={uuidv4()}>
 									<p>{tagName}</p>
-									{index < tagNames.length - 1 && (
-										<div className="bg-[#4E4E4E] w-[1px] h-full" />
-									)}
-								</>
+									{
+										index < tagNames.length - 1 && "/"
+										// <div className="bg-[#4E4E4E] w-[1px] h-1/2" />
+									}
+								</Fragment>
 							);
 						})}
 					</div>

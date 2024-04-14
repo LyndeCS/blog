@@ -6,6 +6,7 @@ const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 import { v4 as uuidv4 } from "uuid";
 import { ProjectListItem } from "@/components/ProjectListItem";
+import { Fragment } from "react";
 
 const projectCardItems = [
 	{
@@ -117,10 +118,10 @@ export default function Home() {
 					<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto" />
 					{projectCardItems.map((cardSummary) => {
 						return (
-							<>
-								<ProjectListItem key={cardSummary.id} card={cardSummary} />
+							<Fragment key={cardSummary.id}>
+								<ProjectListItem card={cardSummary} />
 								<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto" />
-							</>
+							</Fragment>
 						);
 					})}
 				</div>
