@@ -35,7 +35,7 @@ export function ProjectListItem({ card }: ProjectListItemProps) {
 						height={144}
 						className={`${
 							isHovered ? "opacity-100" : "opacity-0 ml-[-280px]"
-						} transition-all duration-500 max-w-fit`}
+						} transition-all duration-700 max-w-fit`}
 					/>
 					{/* HEADER */}
 					<h2
