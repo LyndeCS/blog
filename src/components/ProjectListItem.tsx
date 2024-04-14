@@ -60,7 +60,7 @@ export function ProjectListItem({ card }: ProjectListItemProps) {
 						className={`${
 							ipm.className
 						} flex flex-row justify-end text-[#696969] text-sm gap-[8px] font-medium transition-all duration-500 items-center ${
-							isHovered ? "opacity-100" : "opacity-0 translate-y-[40px]"
+							isHovered ? "opacity-100" : "opacity-0 translate-y-[5px]"
 						}`}
 					>
 						{tagNames.map((tagName, index) => {
