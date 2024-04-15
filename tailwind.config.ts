@@ -48,6 +48,14 @@ const config: Config = {
 						animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
 					},
 				},
+				modalSlideIn: {
+					"0%": {
+						opacity: "0",
+						top: "100%",
+						animationTimingFunction: "cubic-bezier(0.75, 0, 0, 1)",
+					},
+					"100%": { opacity: "100", top: "0" },
+				},
 			},
 			animation: {
 				"pulse-color": "pulse-color 8s infinite",
@@ -55,6 +63,7 @@ const config: Config = {
 				"fade-in-up": "fade-in-up 0.5s",
 				"fade-in-down": "fade-in-down 1s 1s",
 				"bounce-arrow": "bounce-arrow, fade-in-down 1s 1s",
+				"modal-slide-in": "modalSlideIn 1.5s forwards",
 			},
 		},
 	},
