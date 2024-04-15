@@ -1,5 +1,3 @@
-"use client";
-
 import { Fragment, useState } from "react";
 import Image from "next/image";
 import { cardSummary } from "@/types/portfolio";
@@ -13,17 +11,23 @@ const ipm = IBM_Plex_Mono({
 });
 
 type ProjectListItemProps = {
-	card: cardSummary;
+	handleModalOpen: (cardSummary: cardSummary) => void;
+	cardData: cardSummary;
 };
 
-export function ProjectListItem({ card }: ProjectListItemProps) {
-	const { alt, heading, subHeading, tagNames, image } = card;
+export function ProjectListItem({
+	handleModalOpen,
+	cardData,
+}: ProjectListItemProps) {
+	const { alt, heading, subHeading, tagNames, image } = cardData;
 	const [isHovered, setIsHovered] = useState(false);
+
 	return (
 		<div
 			className="w-full h-[144px] flex hover:cursor-pointer my-[16px] max-w-full"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
+			onClick={() => handleModalOpen(cardData)}
 		>
 			<div className="w-full flex flex-row justify-between gap-[24px] overflow-hidden">
 				{/* IMAGE */}

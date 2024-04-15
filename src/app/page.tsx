@@ -4,36 +4,7 @@ import { MdNearMe } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
-import { v4 as uuidv4 } from "uuid";
-import { ProjectListItem } from "@/components/ProjectListItem";
-import { Fragment } from "react";
-
-const projectCardItems = [
-	{
-		id: uuidv4(),
-		alt: "Ajenda app",
-		heading: "AJENDA",
-		subHeading: "Task Manager/Scheduler",
-		tagNames: ["REACT", "MUI", "FIREBASE"],
-		image: "/images/ajenda.png",
-	},
-	{
-		id: uuidv4(),
-		alt: "Streamwake discord bot",
-		heading: "STREAMWAKE",
-		subHeading: "Group-watch Discord Bot",
-		tagNames: ["DISCORDJS", "NODEJS", "MYSQL"],
-		image: "/images/streamwake.png",
-	},
-	{
-		id: uuidv4(),
-		alt: "Personal tech blog",
-		heading: "TECH BLOG",
-		subHeading: "Written Programming Articles",
-		tagNames: ["REACT", "TYPESCRIPT", "TAILWIND", "NEXTJS"],
-		image: "/images/techblog.png",
-	},
-];
+import { ProjectList } from "@/components/ProjectList";
 
 export default function Home() {
 	return (
@@ -113,18 +84,7 @@ export default function Home() {
 					<div className="w-[32px] h-[2px] bg-[#F4EEE3]"></div>
 				</div> */}
 
-				{/* PROJECT LIST */}
-				<div className="w-full ml-[100px]">
-					<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto" />
-					{projectCardItems.map((cardSummary) => {
-						return (
-							<Fragment key={cardSummary.id}>
-								<ProjectListItem card={cardSummary} />
-								<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto" />
-							</Fragment>
-						);
-					})}
-				</div>
+				<ProjectList />
 			</section>
 		</div>
 	);
