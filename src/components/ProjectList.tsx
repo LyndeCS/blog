@@ -44,13 +44,23 @@ export function ProjectList() {
 		isOpen: false,
 		cardData: projectCardItems[0],
 	});
+	const [mouseX, setMouseX] = useState(0);
+	const [mouseY, setMouseY] = useState(0);
 
-	const handleModalOpen = (cardData: cardSummary) => {
+	// const handleProjectItemClick = (x: number, y: number) => {
+	// 	setMouseX(x);
+	// 	setMouseY(y);
+	// 	setModalData({ isOpen: true, cardData: modalData.cardData });
+	// 	console.log(x, y);
+	// };
+
+	const handleModalOpen = (cardData: cardSummary, x: number, y: number) => {
+		setMouseX(x);
+		setMouseY(y);
 		setModalData({ isOpen: true, cardData: cardData });
 	};
 
 	const handleModalClose = () => {
-		console.log("closed");
 		setModalData({ isOpen: false, cardData: projectCardItems[0] });
 	};
 
@@ -62,6 +72,7 @@ export function ProjectList() {
 					return (
 						<Fragment key={cardSummary.id}>
 							<ProjectListItem
+								// handleClick={handleProjectItemClick}
 								handleModalOpen={handleModalOpen}
 								cardData={cardSummary}
 							/>
@@ -74,7 +85,8 @@ export function ProjectList() {
 			{/* MODAL */}
 			{modalData.isOpen && (
 				<ProjectModal
-					// isOpen={modalData.isOpen}
+					mouseX={mouseX}
+					mouseY={mouseY}
 					onClose={handleModalClose}
 					projectSummary={modalData.cardData}
 				/>

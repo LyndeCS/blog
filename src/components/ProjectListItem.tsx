@@ -11,7 +11,8 @@ const ipm = IBM_Plex_Mono({
 });
 
 type ProjectListItemProps = {
-	handleModalOpen: (cardSummary: cardSummary) => void;
+	// handleClick: (x: number, y: number) => void;
+	handleModalOpen: (cardSummary: cardSummary, x: number, y: number) => void;
 	cardData: cardSummary;
 };
 
@@ -27,7 +28,9 @@ export function ProjectListItem({
 			className="w-full h-[144px] flex hover:cursor-pointer my-[16px] max-w-full"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			onClick={() => handleModalOpen(cardData)}
+			onClick={(e) => {
+				handleModalOpen(cardData, e.clientX, e.clientY);
+			}}
 		>
 			<div className="w-full flex flex-row justify-between gap-[24px] overflow-hidden">
 				{/* IMAGE */}

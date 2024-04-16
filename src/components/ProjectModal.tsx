@@ -1,22 +1,47 @@
 import { cardSummary } from "@/types/portfolio";
+import { useState } from "react";
 
 type ProjectModalProps = {
+	mouseX: number;
+	mouseY: number;
 	onClose?: () => void;
 	projectSummary: cardSummary;
 };
 
-export function ProjectModal({ onClose, projectSummary }: ProjectModalProps) {
+export function ProjectModal({
+	mouseX,
+	mouseY,
+	onClose,
+	projectSummary,
+}: ProjectModalProps) {
 	const { alt, heading, subHeading, tagNames, image, description } =
 		projectSummary;
-	// const [isOpen, setIsOpen] = useState(isOpen);
+	const [isModalAnimationComplete, setIsModalAnimationComplete] =
+		useState(false);
+
+	const handleModalAnimationEnd = () => {
+		setIsModalAnimationComplete(true);
+	};
+
 	const handleClose = () => {
 		if (onClose) onClose();
 	};
 
 	return (
-		<div className="fixed top-0 left-0 opacity-0 bg-[#141419] w-full h-full flex flex-col justify-between px-10 pt-10 animate-modal-slide-in">
+		<div
+			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-10 pt-10 animate-modal-slide-in`}
+			onAnimationEnd={() => {
+				setIsModalAnimationComplete(true);
+			}}
+		>
 			{/* MAIN CONTENT */}
-			<div className="w-full h-full flex pb-10 gap-10">
+			<div
+				className={`w-full h-full flex pb-10 gap-10 ${
+					isModalAnimationComplete
+						? "transition-opacity ease-in- duration-300 opacity-100"
+						: "opacity-0"
+				}`}
+			>
 				{/* LEFT 1/3 */}
 				<div className="flex flex-col justify-between h-full w-1/3 text-[#F4EEE3]">
 					{/* BACK BUTTON */}
@@ -33,11 +58,17 @@ export function ProjectModal({ onClose, projectSummary }: ProjectModalProps) {
 					</div>
 				</div>
 				{/* RIGHT 3/4 IMG */}
-				<div className="w-full h-full bg-[#34343d]"></div>
+				<div className="w-full h-full bg-[#545464]"></div>
 				{/* <img className="w-full h-full" src={image}></img> */}
 			</div>
 			{/* FOOTER */}
-			<div className="flex flex-col h-[112px] w-full mx-auto">
+			<div
+				className={`flex flex-col h-[112px] w-full mx-auto ${
+					isModalAnimationComplete
+						? "transition-opacity duration-300 opacity-100 ease-linear"
+						: "opacity-0"
+				}`}
+			>
 				{/* DIVIDER */}
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
 				{/* CONTENT */}
