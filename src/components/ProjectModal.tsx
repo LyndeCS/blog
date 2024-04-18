@@ -1,5 +1,6 @@
 import { cardSummary } from "@/types/portfolio";
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type ProjectModalProps = {
 	mouseX: number;
@@ -29,7 +30,7 @@ export function ProjectModal({
 
 	return (
 		<div
-			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-10 pt-10 animate-modal-slide-in`}
+			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-[40px] pt-[40px] animate-modal-slide-in`}
 			style={{ left: mouseX, top: mouseY }}
 			onAnimationEnd={() => {
 				setIsModalAnimationComplete(true);
@@ -64,7 +65,7 @@ export function ProjectModal({
 			</div>
 			{/* FOOTER */}
 			<div
-				className={`flex flex-col h-[112px] w-full mx-auto ${
+				className={`flex flex-col h-[80px] w-full mx-auto ${
 					isModalAnimationComplete
 						? "transition-opacity duration-300 opacity-100 ease-linear"
 						: "opacity-0"
@@ -75,10 +76,10 @@ export function ProjectModal({
 				{/* CONTENT */}
 				<div className="flex flex-row h-full">
 					{/* COPY */}
-					<div className="flex flex-row text-[#747474] font-medium tracking-wide justify-between w-full h-full items-center">
-						<p>so steez</p>
-						<p>venom</p>
-						<p>me gusta</p>
+					<div className="flex flex-row justify-end text-[#747474] text-[16px] gap-[24px] transition-all duration-500 items-center">
+						{tagNames.map((tagName) => {
+							return <p key={uuidv4()}>{tagName}</p>;
+						})}
 					</div>
 				</div>
 			</div>
