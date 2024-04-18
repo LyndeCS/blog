@@ -24,7 +24,7 @@ export function Navbar() {
 						<Link href="/blog">Blog</Link>
 					</li>
 					<li className="relative text-secondary after:h-[2px] after:bg-secondary after:absolute after:left-0 after:bottom-[2px] after:w-0 hover:after:w-full after:duration-[400ms]">
-						<Link href="/#contact">Contact</Link>
+						<a href="mailto:lyndechris@gmail.com">Contact</a>
 					</li>
 				</ul>
 			</nav>

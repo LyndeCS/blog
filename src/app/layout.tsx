@@ -24,7 +24,7 @@ export default function RootLayout({
 			<body className={`${pjs.className} bg-[#141419] text-[#F4EEE3]`}>
 				<Navbar />
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);

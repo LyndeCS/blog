@@ -5,6 +5,7 @@ import { IoMdMail } from "react-icons/io";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 import { ProjectList } from "@/components/ProjectList";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
 	return (
@@ -76,15 +77,10 @@ export default function Home() {
 			{/* PORTFOLIO SECTION */}
 			<section
 				id="portfolio"
-				className={`pt-32 max-w-[1700px] gap-[113px] mx-auto flex flex-row snap-start h-screen`}
+				className={`pt-32 max-w-[1700px] gap-[113px] mx-auto flex flex-col justify-between snap-start h-screen w-screen`}
 			>
-				{/* SIDE NAV */}
-				{/* <div className="flex flex-col gap-4 w-[48px] my-auto">
-					<div className="w-[32px] h-[2px] bg-gray-500"></div>
-					<div className="w-[32px] h-[2px] bg-[#F4EEE3]"></div>
-				</div> */}
-
 				<ProjectList />
+				<Footer />
 			</section>
 		</div>
 	);

@@ -30,6 +30,7 @@ export function ProjectModal({
 	return (
 		<div
 			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-10 pt-10 animate-modal-slide-in`}
+			style={{ left: mouseX, top: mouseY }}
 			onAnimationEnd={() => {
 				setIsModalAnimationComplete(true);
 			}}
