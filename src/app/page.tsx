@@ -1,11 +1,8 @@
-import { VT323 } from "next/font/google";
-import { SlArrowDown } from "react-icons/sl";
-import { MdNearMe } from "react-icons/md";
-import { IoMdMail } from "react-icons/io";
-const vt323 = VT323({ weight: "400", subsets: ["latin"] });
-
 import { ProjectList } from "@/components/ProjectList";
 import { Footer } from "@/components/Footer";
+import { CgArrowLongDown } from "react-icons/cg";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	return (
@@ -16,59 +13,60 @@ export default function Home() {
 				className={`h-screen flex flex-col snap-start justify-between`}
 			>
 				{/* MAIN CONTENT */}
-				<div className="flex flex-row container mx-auto max-w-[1700px] mt-[16rem] gap-[113px]">
-					{/* SIDE NAV */}
-					{/* <div className="flex flex-col gap-4 w-[48px] my-auto items-center">
-						<div className="w-[24px] h-[1px] bg-[#F4EEE3]"></div>
-						<div className="w-[16px] h-[1px] bg-gray-500"></div>
-					</div> */}
-					{/* HERO COPY */}
-					<div className="flex flex-col grow">
-						<h1 className="text-[72px] font-bold tracking-tighter animate-fade-in-up [animation-delay:_0.25s] opacity-0 [animation-fill-mode:forwards]">
-							Hi, I&apos;m{" "}
-							<span className="bg-gradient-to-r from-[#15E9B4] to-[#15ACC1] text-transparent bg-clip-text">
-								Chris Lynde
-							</span>
-							. Web developer.
-						</h1>
-						<h2 className="text-[72px] leading-[3rem] tracking-tighter mb-28 animate-fade-in-up [animation-delay:_0.5s] opacity-0 [animation-fill-mode:forwards]">
-							<span className="bg-gradient-to-r from-[#7b7b7b] via-[#848484] to-[#7b7b7b] text-transparent bg-clip-text">
-								I bring digital dreams to life.
-							</span>
-						</h2>
-						<div className="flex text-3xl tracking-tight space-x-16 font-medium animate-fade-in [animation-delay:_1s] opacity-0 [animation-fill-mode:forwards]">
-							<div className="flex items-baseline space-x-1">
-								<MdNearMe size={26} color={"#7b7b7b"} />
-								<p className="bg-gradient-to-r from-[#7b7b7b] to-[#848484] text-transparent bg-clip-text">
-									Ontario, Canada
-								</p>
-							</div>
-							<div className="flex items-baseline space-x-3">
-								<IoMdMail size={22} color={"#848484"} />
-								<p className="bg-gradient-to-r from-[#848484] to-[#747474] text-transparent bg-clip-text">
-									lyndechris@gmail.com
-								</p>
-							</div>
+				<div className="grow m-[40px]">
+					{/* HEADING */}
+					<h1 className="flex flex-col w-max top-0 left-0 leading-[0.8] font-extrabold text-[140px] tracking-[-0.04em]">
+						<span className="text-[#F4EEE3]">CHRISTOPHER</span>
+						<span className="bg-gradient-to-r from-[#6BF2D0] to-[#33D5EC] text-transparent bg-clip-text w-fit self-end">
+							LYNDE
+						</span>
+					</h1>
+					<h2 className="flex flex-col text-[100px] text-[#AFAFAF] font-extralight tracking-[-0.04em] leading-[0.82] ml-[520px] w-max">
+						<div className="flex">
+							<p>UI</p>
+							<span className={`text-[88px]`}>/</span>
+							<p>UX FOCUSED</p>
 						</div>
-					</div>
+						<div className="flex">
+							<span className="text-[26px] pl-[8px] leading-9 tracking-tight">
+								FRONT-END
+							</span>
+							<span className="">DEVELOPER</span>
+						</div>
+					</h2>
 				</div>
+				{/* TAGLINE */}
+				<p className="text-[100px] text-[#AFAFAF] font-extralight leading-[1] tracking-[-0.04em] self-end mx-[40px]">
+					“CRAFTING DIGITAL DREAMS.”
+				</p>
 
 				{/* FOOTER */}
-				<div className="flex flex-col h-[112px] max-w-[1700px] mx-auto">
+				<div className="flex flex-col h-[80px] px-[40px] w-full">
 					{/* DIVIDER */}
-					<div className="w-[1700px] h-[1px] bg-[#4E4E4E] mx-auto"></div>
+					<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
 					{/* CONTENT */}
-					<div className="flex flex-row h-full">
+					<div className="flex flex-row h-full justify-between">
 						{/* DOWN ARROWS */}
-						{/* <div className="flex flex-row w-[48px] h-full justify-around items-center">
-							<div className="h-[16px] w-[1px] bg-[#4E4E4E]"></div>
-							<div className="h-[16px] w-[1px] bg-[#4E4E4E]"></div>
-						</div> */}
-						{/* COPY */}
-						<div className="flex flex-row text-[#747474] font-medium tracking-wide justify-between w-full h-full pl-[113px] items-center">
-							{/* <p>Front-End Development</p>
-							<p>Responsive Design</p>
-							<p>UI/UX Focus</p> */}
+						<div className="flex flex-row w-fit h-full justify-around items-center text-[#F4EEE3] text-[20px]">
+							<CgArrowLongDown />
+							<CgArrowLongDown />
+						</div>
+						{/* SOCIALS */}
+						<div className="flex flex-row text-[20px] text-[#747474] tracking-wide justify-between w-[1314px] h-full items-center">
+							<div className="flex flex-row">
+								<p>LYNDECHRIS</p>
+								<span className={`${inter.className}`}>@</span>
+								<p>GMAIL.COM</p>
+							</div>
+							<div className="flex flex-row">
+								<p>GITHUB.COM</p>
+								<span className="text-[18px]">/</span>
+								<p>LYNDECS</p>
+							</div>
+							<div className="flex flex-row">
+								<span className={`${inter.className}`}>@</span>
+								<p>LYNDE_CHRIS</p>
+							</div>
 						</div>
 					</div>
 				</div>
