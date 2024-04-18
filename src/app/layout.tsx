@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const pjs = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-pjs" });
 
 export const metadata: Metadata = {
 	title: "Chris Lynde",
@@ -21,7 +21,7 @@ export default function RootLayout({
 			lang="en"
 			className="!scroll-smooth snap-y snap-always snap-mandatory scrollbar-none"
 		>
-			<body className={`${pjs.className} bg-[#141419] text-[#F4EEE3]`}>
+			<body className={`${pjs.variable} font-sans bg-[#141419] text-[#F4EEE3]`}>
 				<Navbar />
 				{children}
 				{/* <Footer /> */}

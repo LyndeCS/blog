@@ -47,10 +47,13 @@ export default function Home() {
 					{/* CONTENT */}
 					<div className="flex flex-row h-full justify-between">
 						{/* DOWN ARROWS */}
-						<div className="flex flex-row w-fit h-full justify-around items-center text-[#F4EEE3] text-[20px]">
+						<a
+							href="#portfolio"
+							className="flex flex-row w-fit h-full justify-around items-center text-[#F4EEE3] text-[20px]"
+						>
 							<CgArrowLongDown />
 							<CgArrowLongDown />
-						</div>
+						</a>
 						{/* SOCIALS */}
 						<div className="flex flex-row text-[20px] text-[#747474] tracking-wide justify-between w-[1314px] h-full items-center">
 							<div className="flex flex-row">
