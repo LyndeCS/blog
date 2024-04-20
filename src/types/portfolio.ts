@@ -7,3 +7,13 @@ export type cardSummary = {
 	tagNames: string[];
 	image: string;
 };
+
+export type modalSummary = {
+	heading: string;
+	problem: string;
+	role: string;
+	stack: string[];
+	features: string[];
+	result: string;
+	url: string;
+};

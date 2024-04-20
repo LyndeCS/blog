@@ -31,7 +31,7 @@ export function ProjectModal({
 	return (
 		<div
 			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-[40px] pt-[40px] animate-modal-slide-in`}
-			style={{ left: mouseX, top: mouseY }}
+			// style={{ left: mouseX, top: mouseY }}
 			onAnimationEnd={() => {
 				setIsModalAnimationComplete(true);
 			}}
@@ -45,7 +45,7 @@ export function ProjectModal({
 				}`}
 			>
 				{/* LEFT 1/3 */}
-				<div className="flex flex-col justify-between h-full w-1/3 text-[#F4EEE3]">
+				<div className="flex flex-col justify-between h-full w-full text-[#F4EEE3]">
 					{/* BACK BUTTON */}
 					<button
 						className="border rounded border-[#AFAFAF] py-2 px-4 text-[#AFAFAF] w-fit hover:bg-[#AFAFAF] hover:bg-opacity-20"
@@ -73,14 +73,12 @@ export function ProjectModal({
 			>
 				{/* DIVIDER */}
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
-				{/* CONTENT */}
-				<div className="flex flex-row h-full">
-					{/* COPY */}
-					<div className="flex flex-row justify-end text-[#747474] text-[16px] gap-[24px] transition-all duration-500 items-center">
-						{tagNames.map((tagName) => {
-							return <p key={uuidv4()}>{tagName}</p>;
-						})}
-					</div>
+
+				{/* COPY */}
+				<div className="flex flex-row h-full text-[#747474] text-[20px] gap-[24px] items-center">
+					{tagNames.map((tagName) => {
+						return <p key={uuidv4()}>{tagName}</p>;
+					})}
 				</div>
 			</div>
 		</div>

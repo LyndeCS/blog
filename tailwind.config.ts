@@ -64,8 +64,8 @@ const config: Config = {
 						opacity: "0",
 						animationTimingFunction: "cubic-bezier(0.75, 0, 0, 1)",
 						height: "0",
-						// top: "100%",
-						width: "0",
+						top: "100%",
+						// width: "0",
 						background: "#5a5a6b",
 					},
 					"100%": {
