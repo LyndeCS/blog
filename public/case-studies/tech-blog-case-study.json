@@ -1,0 +1,13 @@
+{
+	"project": "Tech Blog",
+	"title": "A Platform for Sharing Insights and Growth",
+	"challenge": "I wanted a centralized platform to document my learning journey in web development, consolidate my notes, and reinforce concepts through writing.",
+	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
+	"tech": ["React", "Typescript", "Next.js"],
+	"features": [
+		"Intuitive Content Creation: Streamlined post authoring with Markdown support and code syntax highlighting for seamless technical writing.",
+		"Discoverability: Robust search functionality and clickable tags for efficient navigation and content exploration.",
+		"Focus on Content: Clean, minimalist design prioritizes readability and showcases technical insights."
+	],
+	"result": "Building my tech blog using Next.js and TypeScript significantly deepened my understanding of these technologies, particularly in utilizing Next.js app routing, server components, and the fetch API for dynamic data handling.  Inspired by the clean designs of existing tech blogs, I used Figma to create a minimalist layout.  This project solidified my knowledge of web development and serves as a valuable addition to my portfolio."
+}
