@@ -53,6 +53,11 @@ export function ProjectModal({
 					>
 						← <span className="pl-2">BACK</span>
 					</button>
+					{/* HEADER */}
+					<div>
+						<h2 className="font-semibold text-6xl">{heading}</h2>
+						<h3 className="italic text-4xl">Title</h3>
+					</div>
 					{/* PROJECT DESCRIPTION */}
 					<div className="flex flex-col gap-2">
 						<h2 className="font-semibold text-4xl">{heading}</h2>
