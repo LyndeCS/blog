@@ -57,14 +57,19 @@ export function ProjectModal({
 					<div>
 						<h2 className="font-semibold text-6xl">{heading}</h2>
 						<h3 className="italic text-4xl">Title</h3>
+						<p className="font-extralight">Role</p>
+						<ul>
+							{tagNames.map((tag) => {
+								return <li>{tag}</li>;
+							})}
+						</ul>
 					</div>
-					{/* PROJECT DESCRIPTION */}
+					{/* BODY COPY */}
 					<div className="flex flex-col gap-2">
-						<h2 className="font-semibold text-4xl">{heading}</h2>
 						<p className="text-xl font-light">{description}</p>
 					</div>
 				</div>
-				{/* RIGHT 3/4 IMG */}
+				{/* THUMBNAIL */}
 				<div className="w-full h-full bg-[#545464]"></div>
 				{/* <img className="w-full h-full" src={image}></img> */}
 			</div>
