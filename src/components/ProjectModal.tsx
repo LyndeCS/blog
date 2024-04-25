@@ -60,7 +60,7 @@ export function ProjectModal({
 						<p className="font-extralight">Role</p>
 						<ul>
 							{tagNames.map((tag) => {
-								return <li>{tag}</li>;
+								return <li key={uuidv4()}>{tag}</li>;
 							})}
 						</ul>
 					</div>
