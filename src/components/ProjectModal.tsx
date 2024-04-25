@@ -58,6 +58,9 @@ export function ProjectModal({
 						<h2 className="font-semibold text-6xl">{heading}</h2>
 						<h3 className="italic text-4xl">Title</h3>
 						<p className="font-extralight">Role</p>
+						<p className="font-extralight">Problem</p>
+						<p className="font-extralight">Features</p>
+						<p className="font-extralight">Result</p>
 						<ul>
 							{tagNames.map((tag) => {
 								return <li key={uuidv4()}>{tag}</li>;
