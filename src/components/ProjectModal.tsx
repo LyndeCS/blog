@@ -55,8 +55,10 @@ export function ProjectModal({
 					</button>
 					{/* HEADER */}
 					<div>
-						<h2 className="font-semibold text-6xl">{heading}</h2>
-						<h3 className="italic text-4xl">Title</h3>
+						<h2 className="font-bold text-[52px]">{heading}</h2>
+						<h3 className="font-normal text-[32px]">Title</h3>
+						{/* DIVIDER */}
+						<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
 						<p className="font-extralight">Role</p>
 						<p className="font-extralight">Problem</p>
 						<p className="font-extralight">Features</p>
