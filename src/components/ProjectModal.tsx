@@ -46,13 +46,6 @@ export function ProjectModal({
 			>
 				{/* LEFT 1/3 */}
 				<div className="flex flex-col justify-between h-full w-full text-[#F4EEE3]">
-					{/* BACK BUTTON */}
-					<button
-						className="border rounded border-[#AFAFAF] py-2 px-4 text-[#AFAFAF] w-fit hover:bg-[#AFAFAF] hover:bg-opacity-20"
-						onClick={handleClose}
-					>
-						← <span className="pl-2">BACK</span>
-					</button>
 					{/* HEADER */}
 					<div>
 						<h2 className="font-bold text-[52px]">{heading}</h2>
@@ -88,7 +81,13 @@ export function ProjectModal({
 			>
 				{/* DIVIDER */}
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
-
+				{/* BACK BUTTON */}
+				<button
+					className="border rounded border-[#AFAFAF] py-2 px-4 text-[#AFAFAF] w-fit hover:bg-[#AFAFAF] hover:bg-opacity-20"
+					onClick={handleClose}
+				>
+					← <span className="pl-2">BACK</span>
+				</button>
 				{/* COPY */}
 				<div className="flex flex-row h-full text-[#747474] text-[20px] gap-[24px] items-center">
 					{tagNames.map((tagName) => {
