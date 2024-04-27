@@ -1,13 +1,15 @@
 {
-	"project": "Ajenda",
+	"heading": "Ajenda",
 	"title": "Streamlining Task Management and Scheduling",
-	"challenge": "Existing to-do list and scheduling apps lacked the combined functionality I needed. Managing my tasks across multiple tools was inefficient and frustrating.",
 	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
-	"tech": ["React", "Firebase", "Firestore", "MUI"],
+	"stack": ["React", "Firebase", "Firestore", "MUI"],
+	"problem": "Existing to-do list and scheduling apps lacked the combined functionality I needed. Managing my tasks across multiple tools was inefficient and frustrating.",
 	"features": [
 		"Integrated Brainstorming & Prioritization:  Intuitive to-do list creation with seamless drag-and-drop sorting for easy prioritization.",
 		"Flexible Scheduling: Schedule tasks with precise start and end times or set all-day events. 'Past Due' reminders promote accountability.",
 		"Organized Task Management:  Tasks are automatically categorized ('Past Due', 'Unscheduled,' 'Scheduled,' 'Completed') for streamlined workflow and progress tracking."
 	],
-	"result": "As my first React project, Ajenda challenged me across multiple areas of web development, from front-end logic to back-end integration. Overcoming these hurdles significantly deepened my understanding of full-stack development and the value of persistence in the face of complex projects.  Through dedicated research and iteration, I aimed to create a user-friendly and intuitive experience. Ajenda now serves as a powerful portfolio piece, demonstrating my ability to learn new technologies quickly and translate ideas into functional web applications."
+	"result": "As my first React project, Ajenda challenged me across multiple areas of web development, from front-end logic to back-end integration. Overcoming these hurdles significantly deepened my understanding of full-stack development and the value of persistence in the face of complex projects.  Through dedicated research and iteration, I aimed to create a user-friendly and intuitive experience. Ajenda now serves as a powerful portfolio piece, demonstrating my ability to learn new technologies quickly and translate ideas into functional web applications.",
+	"websiteUrl": "https://ajenda-landing.netlify.app/",
+	"githubUrl": "https://github.com/LyndeCS/ajenda"
 }

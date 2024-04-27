@@ -6,14 +6,17 @@ export type cardSummary = {
 	description: string;
 	tagNames: string[];
 	image: string;
+	fileName: string;
 };
 
-export type modalSummary = {
+export type caseStudyData = {
 	heading: string;
-	problem: string;
+	title: string;
 	role: string;
 	stack: string[];
+	problem: string;
 	features: string[];
 	result: string;
-	url: string;
+	websiteUrl: string;
+	githubUrl: string;
 };

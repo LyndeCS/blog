@@ -1,13 +1,15 @@
 {
 	"project": "Streamwake",
 	"title": "Enhancing Group Viewing with a Discord Bot",
-	"challenge": "Managing a shared watch history, keeping track of episodes across multiple users in my Discord friend group, and remembering which shows we hadn't finished was a recurring challenge for our weekly group activity.",
 	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
-	"tech": ["Discord.js", "PostgreSQL", "Sequelize"],
+	"stack": ["Discord.js", "PostgreSQL", "Sequelize"],
+	"problem": "Managing a shared watch history, keeping track of episodes across multiple users in my Discord friend group, and remembering which shows we hadn't finished was a recurring challenge for our weekly group activity.",
 	"features": [
 		"Collaborative Watch History: Seamlessly tracks watched shows and episodes for all users within a Discord server, eliminating confusion about viewing progress.",
 		"Centralized Watch List:  Provides a shared watch list where users can easily see what shows are currently being watched by the group.",
 		"Show Suggestion System: Facilitates discovering new content with a suggestion list where users can propose shows for the watch list."
 	],
-	"result": "Building Streamwake significantly improved our Discord group's shared viewing experience. I gained valuable skills in Discord bot development with Node.js  and deepened my understanding of database design and ORM usage. Streamwake's success has inspired me to explore creating additional tools to enhance Discord communities."
+	"result": "Building Streamwake significantly improved our Discord group's shared viewing experience. I gained valuable skills in Discord bot development with Node.js  and deepened my understanding of database design and ORM usage. Streamwake's success has inspired me to explore creating additional tools to enhance Discord communities.",
+	"websiteUrl": "https://github.com/LyndeCS/Streamwake",
+	"githubUrl": "https://github.com/LyndeCS/Streamwake"
 }

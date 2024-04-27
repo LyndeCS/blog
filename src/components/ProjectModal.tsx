@@ -1,4 +1,4 @@
-import { cardSummary } from "@/types/portfolio";
+import { cardSummary, caseStudyData } from "@/types/portfolio";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -6,7 +6,7 @@ type ProjectModalProps = {
 	mouseX: number;
 	mouseY: number;
 	onClose?: () => void;
-	projectSummary: cardSummary;
+	projectSummary: caseStudyData;
 };
 
 export function ProjectModal({
@@ -15,8 +15,17 @@ export function ProjectModal({
 	onClose,
 	projectSummary,
 }: ProjectModalProps) {
-	const { alt, heading, subHeading, tagNames, image, description } =
-		projectSummary;
+	const {
+		heading,
+		title,
+		role,
+		stack,
+		problem,
+		features,
+		result,
+		websiteUrl,
+		githubUrl,
+	} = projectSummary;
 	const [isModalAnimationComplete, setIsModalAnimationComplete] =
 		useState(false);
 
@@ -45,7 +54,7 @@ export function ProjectModal({
 				}`}
 			>
 				{/* LEFT 1/3 */}
-				<div className="flex flex-col justify-between h-full w-full text-[#F4EEE3]">
+				<div className="flex flex-col justify-between h-full w-1/3 text-[#F4EEE3]">
 					{/* HEADER */}
 					<div>
 						<h2 className="font-bold text-[52px]">{heading}</h2>
@@ -57,23 +66,19 @@ export function ProjectModal({
 						<p className="font-extralight">Features</p>
 						<p className="font-extralight">Result</p>
 						<ul>
-							{tagNames.map((tag) => {
+							{stack.map((tag) => {
 								return <li key={uuidv4()}>{tag}</li>;
 							})}
 						</ul>
 					</div>
-					{/* BODY COPY */}
-					<div className="flex flex-col gap-2">
-						<p className="text-xl font-light">{description}</p>
-					</div>
 				</div>
 				{/* THUMBNAIL */}
-				<div className="w-full h-full bg-[#545464]"></div>
+				<div className="w-2/3 h-full bg-[#545464]"></div>
 				{/* <img className="w-full h-full" src={image}></img> */}
 			</div>
 			{/* FOOTER */}
 			<div
-				className={`flex flex-col h-[80px] w-full mx-auto ${
+				className={`flex flex-col h-[80px] w-full mx-auto text-[#AFAFAF] text-[20px] ${
 					isModalAnimationComplete
 						? "transition-opacity duration-300 opacity-100 ease-linear"
 						: "opacity-0"
@@ -81,18 +86,24 @@ export function ProjectModal({
 			>
 				{/* DIVIDER */}
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
-				{/* BACK BUTTON */}
-				<button
-					className="border rounded border-[#AFAFAF] py-2 px-4 text-[#AFAFAF] w-fit hover:bg-[#AFAFAF] hover:bg-opacity-20"
-					onClick={handleClose}
-				>
-					← <span className="pl-2">BACK</span>
-				</button>
-				{/* COPY */}
-				<div className="flex flex-row h-full text-[#747474] text-[20px] gap-[24px] items-center">
-					{tagNames.map((tagName) => {
-						return <p key={uuidv4()}>{tagName}</p>;
-					})}
+				<div className="flex h-full justify-between">
+					{/* BACK BUTTON */}
+					<button
+						className="py-2 px-4 text-[#AFAFAF] w-fit"
+						onClick={handleClose}
+					>
+						← <span className="pl-2">BACK</span>
+					</button>
+
+					{/* LINKS */}
+					<div className="flex w-2/3 justify-between">
+						<a href="" className="w-fit h-full py-2 px-4 flex items-center">
+							SEE IT LIVE
+						</a>
+						<a href="" className="w-fit h-full py-2 px-4 flex items-center">
+							GITHUB
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

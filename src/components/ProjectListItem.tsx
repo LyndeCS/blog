@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 type ProjectListItemProps = {
 	// handleClick: (x: number, y: number) => void;
-	handleModalOpen: (cardSummary: cardSummary, x: number, y: number) => void;
+	handleModalOpen: (fileName: string, x: number, y: number) => void;
 	cardData: cardSummary;
 };
 
@@ -13,7 +13,7 @@ export function ProjectListItem({
 	handleModalOpen,
 	cardData,
 }: ProjectListItemProps) {
-	const { alt, heading, subHeading, tagNames, image } = cardData;
+	const { alt, heading, subHeading, tagNames, image, fileName } = cardData;
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -22,7 +22,7 @@ export function ProjectListItem({
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			onClick={(e) => {
-				handleModalOpen(cardData, e.clientX, e.clientY);
+				handleModalOpen(fileName, e.clientX, e.clientY);
 			}}
 		>
 			<div className="w-full flex flex-row justify-between gap-[24px] overflow-hidden">
