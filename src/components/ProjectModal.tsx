@@ -39,7 +39,7 @@ export function ProjectModal({
 
 	return (
 		<div
-			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-[40px] pt-[40px] animate-modal-slide-in`}
+			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-[40px] pt-[80px] animate-modal-slide-in`}
 			// style={{ left: mouseX, top: mouseY }}
 			onAnimationEnd={() => {
 				setIsModalAnimationComplete(true);
@@ -49,31 +49,45 @@ export function ProjectModal({
 			<div
 				className={`w-full h-full flex pb-10 gap-10 ${
 					isModalAnimationComplete
-						? "transition-opacity ease-in- duration-300 opacity-100"
+						? "transition-opacity ease-in-out duration-300 opacity-100"
 						: "opacity-0"
 				}`}
 			>
-				{/* LEFT 1/3 */}
-				<div className="flex flex-col justify-between h-full w-1/3 text-[#F4EEE3]">
+				{/* LEFT DIVIDER */}
+				<div className="flex flex-col h-full max-w-[700px] min-w-[700px] text-[#F4EEE3] gap-[40px]">
 					{/* HEADER */}
-					<div>
-						<h2 className="font-bold text-[52px]">{heading}</h2>
-						<h3 className="font-normal text-[32px]">Title</h3>
+					<div className="flex flex-col">
+						<h2 className="font-bold text-[52px] uppercase leading-none">
+							{heading}
+						</h2>
+						<h3 className="font-normal text-[32px]">{title}</h3>
 						{/* DIVIDER */}
-						<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
-						<p className="font-extralight">Role</p>
-						<p className="font-extralight">Problem</p>
-						<p className="font-extralight">Features</p>
-						<p className="font-extralight">Result</p>
-						<ul>
+						<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto my-[10px]"></div>
+						<p className="italic text-[#AFAFAF] text-[20px]">{role}</p>
+						<ul className="flex italic text-[#AFAFAF] text-[20px]">
 							{stack.map((tag) => {
-								return <li key={uuidv4()}>{tag}</li>;
+								return <li key={uuidv4()}>{`${tag}, `}</li>;
 							})}
 						</ul>
 					</div>
+					{/* BODY */}
+					<div className="flex flex-col leading-8 gap-[40px]">
+						<div className="flex flex-col gap-[15px]">
+							<h4 className="text-[25px] font-bold">The Problem</h4>
+							<p className="text-[20px] font-light">{problem}</p>
+						</div>
+						<div className="flex flex-col gap-[15px]">
+							<h4 className="text-[25px] font-bold">Key Features</h4>
+							<p className="text-[20px] font-light">{features}</p>
+						</div>
+						<div className="flex flex-col gap-[15px]">
+							<h4 className="text-[25px] font-bold">Result</h4>
+							<p className="text-[20px] font-light">{result}</p>
+						</div>
+					</div>
 				</div>
-				{/* THUMBNAIL */}
-				<div className="w-2/3 h-full bg-[#545464]"></div>
+				{/* RIGHT DIVIDER */}
+				<div className="w-full h-full bg-[#545464]"></div>
 				{/* <img className="w-full h-full" src={image}></img> */}
 			</div>
 			{/* FOOTER */}
@@ -86,21 +100,23 @@ export function ProjectModal({
 			>
 				{/* DIVIDER */}
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto"></div>
-				<div className="flex h-full justify-between">
-					{/* BACK BUTTON */}
-					<button
-						className="py-2 px-4 text-[#AFAFAF] w-fit"
-						onClick={handleClose}
-					>
-						← <span className="pl-2">BACK</span>
-					</button>
+				<div className="flex h-full justify-between gap-[40px]">
+					<div className="flex max-w-[700px] min-w-[700px]">
+						{/* BACK BUTTON */}
+						<button
+							className="py-2 px-4 text-[#AFAFAF] w-fit"
+							onClick={handleClose}
+						>
+							← <span className="pl-2">BACK</span>
+						</button>
+					</div>
 
 					{/* LINKS */}
-					<div className="flex w-2/3 justify-between">
-						<a href="" className="w-fit h-full py-2 px-4 flex items-center">
+					<div className="flex justify-between w-full">
+						<a href="" className="w-fit h-full flex items-center">
 							SEE IT LIVE
 						</a>
-						<a href="" className="w-fit h-full py-2 px-4 flex items-center">
+						<a href="" className="w-fit h-full flex items-center">
 							GITHUB
 						</a>
 					</div>

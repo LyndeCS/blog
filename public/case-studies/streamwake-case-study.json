@@ -1,5 +1,5 @@
 {
-	"project": "Streamwake",
+	"heading": "Streamwake",
 	"title": "Enhancing Group Viewing with a Discord Bot",
 	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
 	"stack": ["Discord.js", "PostgreSQL", "Sequelize"],

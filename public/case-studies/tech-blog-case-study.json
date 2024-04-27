@@ -1,5 +1,5 @@
 {
-	"project": "Tech Blog",
+	"heading": "Tech Blog",
 	"title": "A Platform for Sharing Insights and Growth",
 	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
 	"stack": ["React", "Typescript", "Next.js"],
