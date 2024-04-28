@@ -54,28 +54,31 @@ export function ProjectModal({
 				}`}
 			>
 				{/* LEFT DIVIDER */}
-				<div className="flex flex-col h-full max-w-[700px] min-w-[700px] text-[#F4EEE3] gap-[40px]">
+				<div className="flex flex-col h-full max-w-[700px] min-w-[700px] text-[#F4EEE3]">
 					{/* HEADER */}
-					<div className="flex flex-col text-pretty">
-						<h2 className="font-bold text-[52px] uppercase leading-none">
-							{heading}
-						</h2>
-						<h3 className="font-normal text-[32px]">{title}</h3>
+					<div className="flex flex-col leading-none gap-[10px] pb-[10px]">
+						<h2 className="font-bold text-[52px] uppercase">{heading}</h2>
+						<h3 className="font-normal text-[32px] text-pretty">{title}</h3>
 						{/* DIVIDER */}
 						<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto my-[10px]"></div>
-						<p className="italic text-[#AFAFAF] text-[20px]">{role}</p>
-						<ul className="flex italic text-[#AFAFAF] text-[20px] gap-1">
-							{stack.map((tag, index) => {
-								return (
-									<li key={uuidv4()}>{`${tag}${
-										index !== stack.length - 1 ? ", " : ""
-									}`}</li>
-								);
-							})}
-						</ul>
 					</div>
 					{/* BODY */}
-					<div className="flex flex-col leading-8 gap-[40px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#3b3b40] scrollbar-track-[#1e1e25]">
+					<div className="flex flex-col pr-4 leading-8 gap-[40px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#3b3b40] scrollbar-track-[#1e1e25]">
+						<div className="flex flex-col leading-none">
+							<p className=" text-[#AFAFAF] text-[16px] pb-2 tracking-wider">
+								Role: {role}
+							</p>
+							<ul className="flex  text-[#AFAFAF] text-[16px] gap-1 tracking-wider">
+								Stack:
+								{stack.map((tag, index) => {
+									return (
+										<li key={uuidv4()}>{`${tag}${
+											index !== stack.length - 1 ? ", " : ""
+										}`}</li>
+									);
+								})}
+							</ul>
+						</div>
 						<div className="flex flex-col gap-[15px]">
 							<h4 className="text-[25px] font-bold">The Problem</h4>
 							<p className="text-[20px] font-light">{problem}</p>

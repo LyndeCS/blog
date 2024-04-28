@@ -1,6 +1,6 @@
 {
 	"heading": "Ajenda",
-	"title": "Streamlining Task Management and Scheduling",
+	"title": "Streamlining Task Management",
 	"role": "Full-Stack Developer (UI/UX Design & Implementation)",
 	"stack": ["React", "Firebase", "Firestore", "MUI"],
 	"problem": "Existing to-do list and scheduling apps lacked the combined functionality I needed. Managing my tasks across multiple tools was inefficient and frustrating.",
