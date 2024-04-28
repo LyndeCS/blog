@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-pjs" });
 
 export const metadata: Metadata = {
-	title: "Chris Lynde",
+	title: "Christopher Lynde",
 	description: "Personal portfolio site",
 };
 

@@ -39,7 +39,7 @@ export function ProjectModal({
 
 	return (
 		<div
-			className={`fixed left-0 top-0 opacity-0 w-full h-full rounded flex flex-col justify-between px-[40px] pt-[80px] animate-modal-slide-in`}
+			className={`fixed left-0 top-0 opacity-0 w-screen h-screen flex flex-col px-[40px] pt-[80px] animate-modal-slide-in`}
 			// style={{ left: mouseX, top: mouseY }}
 			onAnimationEnd={() => {
 				setIsModalAnimationComplete(true);
@@ -47,7 +47,7 @@ export function ProjectModal({
 		>
 			{/* MAIN CONTENT */}
 			<div
-				className={`w-full h-full flex pb-10 gap-10 ${
+				className={`w-full h-full flex pb-10 gap-10 overflow-hidden ${
 					isModalAnimationComplete
 						? "transition-opacity ease-in-out duration-300 opacity-100"
 						: "opacity-0"
@@ -56,7 +56,7 @@ export function ProjectModal({
 				{/* LEFT DIVIDER */}
 				<div className="flex flex-col h-full max-w-[700px] min-w-[700px] text-[#F4EEE3] gap-[40px]">
 					{/* HEADER */}
-					<div className="flex flex-col">
+					<div className="flex flex-col text-pretty">
 						<h2 className="font-bold text-[52px] uppercase leading-none">
 							{heading}
 						</h2>
@@ -64,14 +64,18 @@ export function ProjectModal({
 						{/* DIVIDER */}
 						<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto my-[10px]"></div>
 						<p className="italic text-[#AFAFAF] text-[20px]">{role}</p>
-						<ul className="flex italic text-[#AFAFAF] text-[20px]">
-							{stack.map((tag) => {
-								return <li key={uuidv4()}>{`${tag}, `}</li>;
+						<ul className="flex italic text-[#AFAFAF] text-[20px] gap-1">
+							{stack.map((tag, index) => {
+								return (
+									<li key={uuidv4()}>{`${tag}${
+										index !== stack.length - 1 ? ", " : ""
+									}`}</li>
+								);
 							})}
 						</ul>
 					</div>
 					{/* BODY */}
-					<div className="flex flex-col leading-8 gap-[40px]">
+					<div className="flex flex-col leading-8 gap-[40px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#3b3b40] scrollbar-track-[#1e1e25]">
 						<div className="flex flex-col gap-[15px]">
 							<h4 className="text-[25px] font-bold">The Problem</h4>
 							<p className="text-[20px] font-light">{problem}</p>
