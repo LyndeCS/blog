@@ -1,6 +1,7 @@
 import { cardSummary, caseStudyData } from "@/types/portfolio";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 type ProjectModalProps = {
 	mouseX: number;
@@ -81,15 +82,19 @@ export function ProjectModal({
 						</div>
 						<div className="flex flex-col gap-[15px]">
 							<h4 className="text-[25px] font-bold">The Problem</h4>
-							<p className="text-[20px] font-light">{problem}</p>
+							<p className="text-[20px]">{problem}</p>
 						</div>
 						<div className="flex flex-col gap-[15px]">
 							<h4 className="text-[25px] font-bold">Key Features</h4>
-							<p className="text-[20px] font-light">{features}</p>
+							<ul className="flex flex-col text-[20px] gap-[15px]">
+								{features.map((feature, index) => {
+									return <li key={uuidv4()}>{`• ${feature}`}</li>;
+								})}
+							</ul>
 						</div>
 						<div className="flex flex-col gap-[15px]">
 							<h4 className="text-[25px] font-bold">Result</h4>
-							<p className="text-[20px] font-light">{result}</p>
+							<p className="text-[20px]">{result}</p>
 						</div>
 					</div>
 				</div>
@@ -120,10 +125,17 @@ export function ProjectModal({
 
 					{/* LINKS */}
 					<div className="flex justify-between w-full">
-						<a href="" className="w-fit h-full flex items-center">
+						<a
+							href={websiteUrl}
+							className="w-fit h-full flex items-center gap-2 hover:underline underline-offset-2"
+						>
 							SEE IT LIVE
+							<FaExternalLinkAlt />
 						</a>
-						<a href="" className="w-fit h-full flex items-center">
+						<a
+							href={githubUrl}
+							className="w-fit h-full flex items-center hover:underline underline-offset-2"
+						>
 							GITHUB
 						</a>
 					</div>
