@@ -19,4 +19,5 @@ export type caseStudyData = {
 	result: string;
 	websiteUrl: string;
 	githubUrl: string;
+	image: string;
 };

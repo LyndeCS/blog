@@ -11,5 +11,6 @@
 	],
 	"result": "As my first React project, Ajenda challenged me across multiple areas of web development, from front-end logic to back-end integration. Overcoming these hurdles significantly deepened my understanding of full-stack development and the value of persistence in the face of complex projects.  Through dedicated research and iteration, I aimed to create a user-friendly and intuitive experience. Ajenda now serves as a powerful portfolio piece, demonstrating my ability to learn new technologies quickly and translate ideas into functional web applications.",
 	"websiteUrl": "https://ajenda-landing.netlify.app/",
-	"githubUrl": "https://github.com/LyndeCS/ajenda"
+	"githubUrl": "https://github.com/LyndeCS/ajenda",
+	"image": "/images/ajenda_img1.png"
 }

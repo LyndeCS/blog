@@ -2,6 +2,7 @@ import { cardSummary, caseStudyData } from "@/types/portfolio";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Image from "next/image";
 
 type ProjectModalProps = {
 	mouseX: number;
@@ -26,6 +27,7 @@ export function ProjectModal({
 		result,
 		websiteUrl,
 		githubUrl,
+		image,
 	} = projectSummary;
 	const [isModalAnimationComplete, setIsModalAnimationComplete] =
 		useState(false);
@@ -99,7 +101,14 @@ export function ProjectModal({
 					</div>
 				</div>
 				{/* RIGHT DIVIDER */}
-				<div className="w-full h-full bg-[#545464]"></div>
+				<a href={websiteUrl} target="_blank" className="w-full h-full relative">
+					<Image
+						src={image}
+						fill={true}
+						alt={`${heading} app thumbnail`}
+						className="object-cover object-left-top"
+					/>
+				</a>
 				{/* <img className="w-full h-full" src={image}></img> */}
 			</div>
 			{/* FOOTER */}
@@ -127,6 +136,7 @@ export function ProjectModal({
 					<div className="flex justify-between w-full">
 						<a
 							href={websiteUrl}
+							target="_blank"
 							className="w-fit h-full flex items-center gap-2 hover:underline underline-offset-2"
 						>
 							SEE IT LIVE
@@ -134,6 +144,7 @@ export function ProjectModal({
 						</a>
 						<a
 							href={githubUrl}
+							target="_blank"
 							className="w-fit h-full flex items-center hover:underline underline-offset-2"
 						>
 							GITHUB

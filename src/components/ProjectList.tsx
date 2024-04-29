@@ -52,6 +52,7 @@ const DEFAULT_MODAL_DATA = {
 	result: "Loading...",
 	websiteUrl: "Loading...",
 	githubUrl: "Loading...",
+	image: "Loading...",
 };
 
 export function ProjectList() {
