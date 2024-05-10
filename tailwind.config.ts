@@ -19,7 +19,7 @@ const config: Config = {
 			colors: {
 				primary: "#E36036",
 				secondary: "#15DFB6",
-				tertiary: "",
+				tertiary: "#49DAE8",
 			},
 			boxShadow: {
 				glass: "inset 2px rgb(255, 255, 255)",

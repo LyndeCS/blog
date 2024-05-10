@@ -10,25 +10,32 @@ export default function Home() {
 			{/* HERO SECTION */}
 			<section
 				id="hero"
-				className={`h-screen flex flex-col snap-start justify-between`}
+				className={`md:h-screen flex flex-col snap-start justify-between`}
 			>
 				{/* MAIN CONTENT */}
 				<div className="grow m-[40px]">
 					{/* HEADING */}
-					<h1 className="flex flex-col w-max top-0 left-0 leading-[0.8] font-extrabold text-[140px] tracking-[-0.04em]">
+					<h1 className="hidden md:flex flex-col w-max top-0 left-0 leading-[0.8] font-extrabold text-[140px] tracking-[-0.04em]">
 						<span className="text-[#F4EEE3]">CHRISTOPHER</span>
 						<span className="bg-gradient-to-r from-[#6BF2D0] to-[#33D5EC] text-transparent bg-clip-text w-fit self-end">
 							LYNDE
 						</span>
 					</h1>
-					<h2 className="flex flex-col text-[100px] text-[#AFAFAF] font-extralight tracking-[-0.04em] leading-[0.82] ml-[520px] w-max">
+					{/* MOBILE HEADING */}
+					<h1 className="block md:hidden leading-[0.8] font-extrabold text-[48px] tracking-[-0.04em]">
+						<span className="text-[#F4EEE3] pr-2">CHRIS</span>
+						<span className="bg-gradient-to-r from-[#6BF2D0] to-[#33D5EC] text-transparent bg-clip-text">
+							LYNDE
+						</span>
+					</h1>
+					<h2 className="flex flex-col text-[34px] md:text-[100px] text-[#AFAFAF] font-extralight tracking-[-0.04em] leading-[0.82] md:ml-[520px] w-max">
 						<div className="flex">
 							<p>UI</p>
-							<span className={`text-[88px]`}>/</span>
+							<span className={`text-[34px] md:text-[88px]`}>/</span>
 							<p>UX FOCUSED</p>
 						</div>
 						<div className="flex">
-							<span className="text-[26px] pl-[8px] leading-9 tracking-tight">
+							<span className="text-[16px] md:text-[26px] pl-[8px] leading-9 tracking-tight">
 								FRONT-END
 							</span>
 							<span className="">DEVELOPER</span>
