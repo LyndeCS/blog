@@ -43,7 +43,7 @@ export default function Home() {
 					</h2>
 				</div>
 				{/* TAGLINE */}
-				<p className="text-[100px] text-[#AFAFAF] font-extralight leading-[1] tracking-[-0.04em] self-end mx-[40px]">
+				<p className="text-[40px] md:text-[100px] text-[#AFAFAF] font-extralight leading-[1] tracking-[-0.04em] self-end mx-[40px]">
 					“CRAFTING DIGITAL DREAMS.”
 				</p>
 
