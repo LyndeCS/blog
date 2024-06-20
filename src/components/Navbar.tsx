@@ -30,7 +30,7 @@ export function Navbar() {
 			</header>
 
 			<header className="block md:hidden">
-				<nav className="mt-[40px] mr-[40px] absolute right-0">
+				<nav className="mt-[20px] mr-[20px] absolute right-0">
 					<button
 						className="text-[#AFAFAF] text-[20px] focus:outline-none"
 						onClick={toggleMenu}

@@ -18,7 +18,7 @@ export function ProjectListItem({
 
 	return (
 		<div
-			className="w-full h-[144px] flex hover:cursor-pointer my-[16px] max-w-full"
+			className="w-full h-[80px] md:h-[144px] flex hover:cursor-pointer my-[16px] max-w-full"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			onClick={(e) => {
@@ -41,7 +41,7 @@ export function ProjectListItem({
 					<h2
 						className={`${
 							isHovered ? "text-[#AFAFAF]" : "text-[#AFAFAF]"
-						} font-medium text-[64px] pl-[24px] w-full leading-none align-bottom transition-all duration-500 pt-2`}
+						} font-medium text-[32px] md:text-[64px] pl-[24px] w-full leading-none align-bottom transition-all duration-500 pt-2`}
 					>
 						{heading}
 					</h2>

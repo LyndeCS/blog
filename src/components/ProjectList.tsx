@@ -81,7 +81,7 @@ export function ProjectList() {
 
 	return (
 		<>
-			<div className="w-full pl-[520px] items-end">
+			<div className="w-full md:pl-[520px] items-end">
 				<div className="w-full h-[1px] bg-[#4E4E4E] mx-auto" />
 				{projectCardItems.map((cardSummary) => {
 					return (
