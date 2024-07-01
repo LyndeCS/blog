@@ -35,7 +35,7 @@ export function Navbar() {
 						className="text-[#AFAFAF] text-[20px] focus:outline-none"
 						onClick={toggleMenu}
 					>
-						<IoMenuSharp className="h-12 w-12" />
+						<IoMenuSharp className="h-8 w-8" />
 					</button>
 
 					<div
