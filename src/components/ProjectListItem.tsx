@@ -26,8 +26,8 @@ export function ProjectListItem({
 			}}
 		>
 			<div className="w-full flex flex-row justify-between gap-[24px] overflow-hidden">
-				{/* IMAGE */}
-				<div className="flex w-full">
+				{/* LEFT SIDE */}
+				<div className="hidden md:flex w-full">
 					<Image
 						alt={alt}
 						src={image}
@@ -46,10 +46,20 @@ export function ProjectListItem({
 						{heading}
 					</h2>
 				</div>
-				{/* COPY */}
-				<div className="w-[512px] flex flex-col justify-between mt-[24px] ">
+				{/* MOBILE */}
+				<div className="flex md:hidden">
+					<h2
+						className={`${
+							isHovered ? "text-[#AFAFAF]" : "text-[#AFAFAF]"
+						} font-medium text-[32px] md:text-[64px] w-full leading-none align-bottom transition-all duration-500 pt-2`}
+					>
+						{heading}
+					</h2>
+				</div>
+				{/* RIGHT SIDE */}
+				<div className="w-fit md:w-[512px] flex flex-col justify-between mt-[12px] md:mt-[24px] ">
 					<h3
-						className={`text-[20px] inline-block align-top leading-[0.5] text-right tracking-wide ${
+						className={`text-[12px] md:text-[20px] inline-block align-top md:leading-[0.5] text-right tracking-wide ${
 							isHovered ? "text-[#AFAFAF]" : "text-[#AFAFAF]"
 						}`}
 					>
@@ -57,7 +67,7 @@ export function ProjectListItem({
 					</h3>
 					{/* TAGNAMES */}
 					<div
-						className={`flex flex-row justify-end text-[#747474] text-[16px] gap-[24px] transition-all duration-500 items-center ${
+						className={`hidden md:flex flex-row justify-end text-[#747474] text-[16px] gap-[24px] transition-all duration-500 items-center ${
 							isHovered ? "opacity-100" : "opacity-0 translate-y-[5px]"
 						}`}
 					>
