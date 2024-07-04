@@ -44,7 +44,7 @@ export default function Home() {
 				</div>
 
 				{/* MOBILE FOOTER */}
-				<div className="flex md:hidden text-[#AFAFAF] justify-between px-[20px]">
+				<div className="flex md:hidden mb-[20px] mt-[40px] text-[#AFAFAF] justify-between px-[20px]">
 					<h3 className="font-extralight text-[24px] flex flex-col leading-none">
 						<span>“CRAFTING</span>
 						<span>DIGITAL DREAMS.”</span>
