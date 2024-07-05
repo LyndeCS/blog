@@ -98,7 +98,7 @@ export default function Home() {
 			{/* PORTFOLIO SECTION */}
 			<section
 				id="portfolio"
-				className={`md:pt-32 px-[20px] md:px-[40px] flex flex-col justify-between md:snap-start md:h-screen md:w-screen`}
+				className={`md:pt-32 px-[20px] md:px-[40px] h-full flex flex-col justify-between md:snap-start md:h-screen md:w-screen`}
 			>
 				<ProjectList />
 				<Footer />
